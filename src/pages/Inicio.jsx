@@ -7,7 +7,6 @@ import Toti from "../components/ui/Toti";
 import ask from '../components/ui/icons/preguntas.png'
 import { crearClick } from "../helpers/getClicks";
 import { useEffect, useState } from "react";
-import { TourVirtual } from "../components/tour-virtual/TourVirtual";
 const Container = styled.div`
   display: flex;
   flex-direction: column;

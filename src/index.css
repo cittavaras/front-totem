@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Jaldi&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Jaldi', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -17,14 +18,14 @@ body {
 }
 
 
-.centrar-carrusel{
+.centrar-carrusel {
   width: 97%;
   /* height: 90%; */
   margin-right: 2rem;
   margin-left: 2rem;
-  
+
 }
 
-.example::-webkit-scrollbar  {
+.example::-webkit-scrollbar {
   display: none;
 }
