@@ -1,0 +1,200 @@
+.div-find-start {
+    display: flex;
+    flex-direction: column;
+    padding: 250px;
+}
+
+.title-select {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: 771px;
+    height: 222px;
+    background: rgba(255, 183, 27, 0.5);
+    border-radius: 70px 0px 70px 50px;
+    position: absolute;
+    left: 150px;
+    top: 305px;
+}
+
+p {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+.forlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 700px; */
+    border: #FFB71B solid;
+}
+
+
+
+.img-icon {
+    position: fixed;
+    top: 102px;
+}
+
+.titulo-alumno {
+    color: #FFB71B;
+    font-family: sans-serif;
+    font-size: 38px;
+    text-align: center;
+    position: fixed;
+    top: 350px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    position: relative;
+    top: -110px;
+}
+
+.contenedor .lista-contenedor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .lista-contenedor .titulo-docente-tarjeta {
+    box-sizing: border-box;
+    width: 772px;
+    height: 85px;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 22px 22px 0px 0px;
+    position: relative;
+    top: 40px;
+}
+
+.contenedor .lista-contenedor .titulo-asignatura {
+    width: 772px;
+    height: 61px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.seleccionar {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 46px;
+    position: relative;
+    top: 220px;
+}
+
+.formulario {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 410px;
+}
+
+.contenedor-menu {
+    position: fixed;
+    top: 300px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input-rut {
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    height: 70px;
+    width: 700px;
+    font-size: 45px;
+}
+
+.pad-numerico {
+    position: fixed;
+    top: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-image: url('img/frentesedeblur.png');
+    background-position: bottom;
+    padding-bottom: 10%;
+    margin-bottom: 12rem;
+
+}
+
+.keyboard {
+    position: fixed;
+    top: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-image: url('img/frentesedeblur.png');
+    background-position: bottom;
+    padding-bottom: 10%;
+    margin-bottom: 12rem;
+}
+
+.lista-profe {
+    position: fixed;
+    top: 630px;
+    height: 36%;
+    padding-top: 5rem;
+    overflow-y: scroll; 
+}
+
+
+
+.formulario-docente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.fomulario-rut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.titulo-docente1 {
+    position: absolute;
+    top: 600px;
+}
+.titulo-rut {
+    position: absolute;
+    top: 850px;
+    left: 305px;
+
+}
+
+.titulo-docente {
+    position: absolute;
+    top: 580px;
+    left: 305px;
+}
+
