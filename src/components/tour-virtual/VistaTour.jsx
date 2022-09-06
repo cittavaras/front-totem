@@ -27,7 +27,7 @@ export const VistaTour = () => {
                 <h1 className='titulo-vista'>Escanea el siguiente código</h1>
                 <img className='fondo' src={fondo} />
                 <img className='qr' src={qrNuevo} />
-                <Boton onClick={handleAddCategory} >Continuar</Boton>
+                <Boton className='font' onClick={handleAddCategory} >Continuar</Boton>
             </div>
         </Div>
     )

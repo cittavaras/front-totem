@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+span{
+  font-family: 'Inter', sans-serif;
+}
+p{
+  font-family: 'Inter', sans-serif;
+}
+.btn-with{
+  font-family: 'Inter', sans-serif;
+  font-size: 1px !important;
+} 
+
 .p-inicio {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   color: #ffff;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 45px;
   line-height: 54px;
   position: absolute;
   background: rgba(255, 183, 27, 0.5);
@@ -35,7 +48,7 @@
   height: 90px;
   left: 340px;
   top: 1534px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 37px;
@@ -60,7 +73,7 @@
   top: 1629.66px;
   background: #ffb71b;
   border-radius: 316.881px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
@@ -91,7 +104,7 @@
   height: 135px;
   left: 194px;
   top: 300px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
@@ -104,7 +117,7 @@
 
 .name-cat {
   color: #1e1e1e;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -130,7 +143,7 @@ li {
 }
 
 .btn-salir {
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
@@ -160,7 +173,7 @@ li {
   height: 127px;
   left: 239px;
   top: 523px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -193,7 +206,7 @@ li {
   height: 127px;
   left: 230px;
   top: 729px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -229,7 +242,7 @@ li {
   left: 239px;
   top: 523px;
   text-transform: capitalize;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -258,7 +271,7 @@ li {
   height: 127px;
   left: 230px;
   top: 729px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -276,9 +289,9 @@ li {
   height: 135px;
   left: 212px;
   top: 930px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif !important;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 26px;
   line-height: 31px;
   display: flex;
@@ -296,7 +309,7 @@ li {
   height: 32px;
   background: #ffb71b;
   border-radius: 0px 0px 10px 0px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -317,7 +330,7 @@ li {
   height: 135px;
   left: 212px;
   top: 1084px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -353,7 +366,7 @@ li {
 }
 
 .form-eva .p-exp {
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 33px;
@@ -375,7 +388,7 @@ li {
   position: relative;
   top: 290px;
   left: 15px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
@@ -408,7 +421,7 @@ ul .lista-eva .input-eva {
   align-items: flex-start;
   border: 4px solid #000000;
   border-radius: 83px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -446,7 +459,7 @@ ul .lista-eva:hover .icon-2 {
 }
 
 .p-finalizar {
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 33px;
@@ -471,7 +484,7 @@ ul .lista-eva:hover .icon-2 {
 .btn-enviar {
   width: 388px;
   height: 87.01px;
-  font-family: "Inter";
+  font-family: 'Inter', sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 45px;

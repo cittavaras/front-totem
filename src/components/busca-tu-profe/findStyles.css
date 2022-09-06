@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+.btn-font{
+    font-family: 'Inter', sans-serif;
+}
+
 .div-find-start {
     display: flex;
     flex-direction: column;
@@ -5,7 +12,7 @@
 }
 
 .title-select {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -24,7 +31,7 @@
 }
 
 p {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -52,7 +59,7 @@ p {
 
 .titulo-alumno {
     color: #FFB71B;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 38px;
     text-align: center;
     position: fixed;
@@ -92,7 +99,7 @@ p {
 
 .seleccionar {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 46px;
     position: relative;
     top: 220px;

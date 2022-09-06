@@ -103,7 +103,7 @@ const PalabraClave = () => {
                             <div key={_id} onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>
                                 <p className='resultado-sub'>{pregunta}</p>
 
-                                <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
+                                <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p className='btn-with'>Cerrar</p>) : (<p className='btn-with'>Respuesta</p>)}</button>
                                 {
                                     active && respuestaF.id === _id && (
                                         <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>

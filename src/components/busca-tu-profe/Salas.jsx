@@ -37,19 +37,19 @@ const Salas = () => {
         </Asigantura>
 
         <ContenedorHorario>
-            <Horario>{HorInic} - {Final}</Horario>
+            <Horario className='btn-font'>{HorInic} - {Final}</Horario>
             <img src={gotaL} alt="" />
 
             <A>
-                <NA>{Nom_Asignatura} </NA>
-                <NA>Sala: {sala}</NA>
+                <NA className='btn-font'>{Nom_Asignatura} </NA>
+                <NA className='btn-font'>Sala: {sala}</NA>
             </A>
             <img src={gotaR} alt="" />
             {/* <Horario>Hora Termino: {Final}</Horario> */}
         </ContenedorHorario>
   
         <Img ampliar={imagen}   onTouchStart={handleEnter}  src={`https://totem.ivaras.cl:7002/salas/${sala}.png`} alt="" />
-        <Boton onClick={handleAddCategory} >Salir</Boton>
+        <Boton className='btn-font' onClick={handleAddCategory} >Salir</Boton>
 
     </Div>
     </Fondo>

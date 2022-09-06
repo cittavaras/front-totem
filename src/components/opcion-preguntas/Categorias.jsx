@@ -82,8 +82,6 @@ const Categorias = () => {
                 </Divsub>
                 <Flecha src={flecha} />
 
-                {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
-
             </div>
         </>
     )

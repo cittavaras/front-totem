@@ -94,7 +94,7 @@ export const Encuentra = () => {
           <Contenedor >
             <form onSubmit={handleSubmitName}>
               <P className='titulo-docente'>Según datos de profesor(a)</P>
-              <Input1 negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
+              <Input1  className='btn-font' negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
             </form>
             {
               keyboard ?
@@ -109,7 +109,7 @@ export const Encuentra = () => {
 
             <form onSubmit={handleSubmitRut}>
               <P className='titulo-rut'>Según asignatura</P>
-              <Input negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
+              <Input  className='btn-font' negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
                 maxLength={9} />
             </form>
             {
