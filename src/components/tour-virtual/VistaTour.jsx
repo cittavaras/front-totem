@@ -2,13 +2,15 @@ import totiTour from './img/toti-tour.png'
 import EdificioB from "./img/Fondos/EdificioB.png";
 import styled from 'styled-components';
 import "./tourvirtual.css";
+
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import App from "./Scrolltour"
 
-export const VistaTour = () => {
+export const VistaTour = ({Position}) => {
 
     const navigate = useNavigate();
+    console.log(`esta es la posicion ${Position}`)
     
     const handleAddCategory = () => {
         navigate('/inicio/evaluacion')
@@ -22,8 +24,13 @@ export const VistaTour = () => {
 
     return (
         <Div>  
-            <App className='posicion' />
-         <img src={EdificioB} />
+            <App className='posicion' 
+                Position={Position}
+            />
+         <img src={
+            {if (){
+
+         }}} />
             <img className='toti' src={totiTour} />
             <div className='imagenes'>
                 <Boton className='font' onClick={handleAddCategory} >Continuar</Boton>

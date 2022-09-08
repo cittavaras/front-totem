@@ -4,10 +4,15 @@ import Torre from "./img/qr/Torreqr.png";
 import EdificioB from "./img/Fondos/EdificioB.png";
 import PatioB from "./img/Fondos/PatioB.png";
 import TorreB from "./img/Fondos/TorreB.png";
+import fondoqr from './img/iconos/fondo-qr.png';
+import btntp from './img/iconos/btn-top.png';
+import btntb from './img/iconos/btn-button.png';
 import React, { useState } from "react";
 import { useEffect } from "react";
 import "./tourvirtual.css";
-const App = () => {
+
+const App = ({ }) => {
+
   const [Position, setposition] = useState(0);
 
   const handleScroll = (Event) => {
@@ -15,7 +20,10 @@ const App = () => {
     setposition(Event.currentTarget.scrollTop);
   };
   return (
-      <div style={{ display: "flex", gap: "9rem", marginTop: "45rem", marginLeft: "15rem", position: "absolute", }}>
+    <div style={{ display: "flex", gap: "9rem", marginTop: "45rem", marginLeft: "15rem", position: "absolute", alignItems: "center", top: "70px" }}>
+      <img className='fondo-qr' src={fondoqr} />
+      <img className='img-btn btn-a' src={btntp}/>
+      <img className='img-btn btn-b' src={btntb}/>
       <div
         onScroll={handleScroll}
         style={{
@@ -27,19 +35,23 @@ const App = () => {
           flexDirection: "column",
           fontFamily: "sans-serif",
           fontsize: "70",
+          position: "absolute"
         }}
+        className='scroll'
       >
-        <p>EDIFICIO VARAS</p>
-        <p>TORRE</p> 
-        <p>PATIO</p>
-      </div>
-     
-      <div>
-        {Position <= 99 &&  <div>  <img src={Edificio}alt="Edificio"/> </div> } 
-        
-        {Position >= 100 && Position <=211 &&  <div> <img src={Torre}alt="Torre"/></div> } 
 
-        {Position === 212 && <div> <img src={Patio}alt="Patio"/></div>}  
+        <p>EDIFICIO VARAS</p>
+        <p>TORRE</p>
+        <p>PATIO</p>
+
+      </div>
+
+      <div className='img-qr'>
+        {Position <= 99 && <div>  <img src={Edificio} alt="Edificio" /> </div>}
+
+        {Position >= 100 && Position <= 211 && <div> <img src={Torre} alt="Torre" /></div>}
+
+        {Position === 212 && <div> <img src={Patio} alt="Patio" /></div>}
 
       </div>
     </div>
