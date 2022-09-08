@@ -1,10 +1,10 @@
-import fondo from './img/fondo.png'
-import qrNuevo from './img/qr-nuevo.png'
 import totiTour from './img/toti-tour.png'
+import EdificioB from "./img/Fondos/EdificioB.png";
 import styled from 'styled-components';
 import "./tourvirtual.css";
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import App from "./Scrolltour"
 
 export const VistaTour = () => {
 
@@ -21,14 +21,14 @@ export const VistaTour = () => {
     }, [])
 
     return (
-        <Div>
+        <Div>  
+            <App className='posicion' />
+         <img src={EdificioB} />
             <img className='toti' src={totiTour} />
             <div className='imagenes'>
-                <h1 className='titulo-vista'>Escanea el siguiente código</h1>
-                <img className='fondo' src={fondo} />
-                <img className='qr' src={qrNuevo} />
                 <Boton className='font' onClick={handleAddCategory} >Continuar</Boton>
             </div>
+            
         </Div>
     )
 }

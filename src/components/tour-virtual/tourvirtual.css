@@ -51,7 +51,6 @@
 .recorre {
     position: absolute;
     top: 750px;
-    
     font-style: normal; 
     font-weight: 700;
     font-size: 45px;
@@ -144,4 +143,32 @@ top: 170px;
 left: 200px;
 border-radius: 70px 70px 0px 70px;
 width: 700px;
+}
+
+.TORRE{
+
+top: 100px;
+color: #FFFFFF;
+left: 200px;
+
+}
+
+.Esfera{
+box-sizing: border-box;
+position: absolute;
+width: 389px;
+height: 389px;
+left: 614px;
+top: 738px;
+border: 19px solid #000000;
+filter: blur(56px)
+}
+.EdificioB{
+
+  position: absolute;
+    top: -100px;
+}
+.posicion{
+position: absolute;
+
 }

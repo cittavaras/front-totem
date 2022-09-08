@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import "./tourvirtual.css";
 import totitour2 from "./img/toti-tour2.png";
 import fondocodigo from "./img/IMAGEN_FONDO_1.png";
