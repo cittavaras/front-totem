@@ -13,7 +13,7 @@ export const TourVirtual = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 30000);
+    }, 60000);
   }, []);
   return (
     <>

@@ -1,17 +1,22 @@
 import totiTour from './img/toti-tour.png'
 import EdificioB from "./img/Fondos/EdificioB.png";
+import PatioBb from "./img/Fondos/PatioB.png";
+import TorreB from "./img/Fondos/TorreB.png";
 import styled from 'styled-components';
 import "./tourvirtual.css";
 
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import App from "./Scrolltour"
 
-export const VistaTour = ({Position}) => {
+export const VistaTour = () => {
+
+    const [Position, setposition] = useState(1);
+
 
     const navigate = useNavigate();
-    console.log(`esta es la posicion ${Position}`)
-    
+
+
     const handleAddCategory = () => {
         navigate('/inicio/evaluacion')
     }
@@ -19,23 +24,23 @@ export const VistaTour = ({Position}) => {
     useEffect(() => {
         setTimeout(() => {
             navigate('/')
-        }, 30000);
+        }, 60000);
     }, [])
 
     return (
-        <Div>  
-            <App className='posicion' 
+        <Div>
+            <img src={Position===1 ? EdificioB : ''} />
+            <img src={Position===2 ? TorreB : ''} />
+            <img src={Position===3 ? PatioBb : ''} />
+            <App className='posicion'
                 Position={Position}
+                setposition={setposition}
             />
-         <img src={
-            {if (){
-
-         }}} />
             <img className='toti' src={totiTour} />
             <div className='imagenes'>
                 <Boton className='font' onClick={handleAddCategory} >Continuar</Boton>
             </div>
-            
+
         </Div>
     )
 }
