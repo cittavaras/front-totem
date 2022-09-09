@@ -7,6 +7,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 
 export const NumericPad = ({ setRutAlumnos, rutAlumnos, activeNumpad, submit }) => {
+  
   const onClickRut = (e) => {
     const value = e.currentTarget.value
     setRutAlumnos(rutAlumnos + `${value}`);

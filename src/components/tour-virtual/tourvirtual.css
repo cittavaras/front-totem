@@ -72,7 +72,7 @@
 
 .btn-get {
     position: absolute;
-    top: 1120px;
+    top: 1200px;
     right: 400px;
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
@@ -90,7 +90,9 @@
 .imagenes {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
 }
 
 .fondo {
