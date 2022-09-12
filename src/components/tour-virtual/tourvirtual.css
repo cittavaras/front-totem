@@ -123,7 +123,7 @@
 
 .toti {
     position: absolute;
-    left: 400px;
+    left: 600px;
     width: 400px;
 }
 
@@ -160,17 +160,42 @@
     left: 200px;
 
 }
-
-.Esfera {
-    box-sizing: border-box;
+.Escanea{
     position: absolute;
-    width: 389px;
-    height: 389px;
-    left: 614px;
-    top: 738px;
-    border: 19px solid #000000;
-    filter: blur(56px)
+    top: 250px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+
 }
+.para{
+    position: absolute;
+    top: 300px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+
 
 .EdificioB {
 
