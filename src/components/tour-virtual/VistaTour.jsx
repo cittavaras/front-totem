@@ -36,6 +36,8 @@ export const VistaTour = () => {
                 Position={Position}
                 setposition={setposition}
             />
+              <h1 className="Escanea">Escanea el siguiente codigo </h1>
+              <h1 className="para">para recorrer: </h1>
             <img className='toti' src={totiTour} />
             <div className='imagenes'>
                 <Boton className='font' onClick={handleAddCategory} >Continuar</Boton>
