@@ -10,28 +10,31 @@ import styled from 'styled-components';
 export const Footer = () => {
   return (
     <FooterContainer>
-    <div className='waves'>
-      <div className='wave' id='wave1'></div>
-      <div className='wave' id='wave2'></div>
-      <div className='wave' id='wave3'></div>
-      <div className='wave' id='wave4'></div>
-    </div>
-    <ul className='social-icon'>
-      <li><BsWhatsapp className='icon-wsp' />
-        <img src={wsp} alt='wsp'/>   
+      <h1 className='text-qr'>PRECIONA Y ESCANEA EL QR</h1>
+      <ul className='social-icon'>
+        <li><BsWhatsapp className='icon-wsp' />
+          <img src={wsp} alt='wsp' />
         </li>
-      <li><BsInstagram className='icon-ig'  />
-        <img src={ig} alt='ig'/>   
+        <li><BsInstagram className='icon-ig' />
+          <img src={ig} alt='ig' />
         </li>
-      <li><BsFacebook className='icon-fb' />
-        <img src={fb} alt='fb' />   
-         </li>
-    </ul>
-  </FooterContainer>
+        <li><BsFacebook className='icon-fb' />
+          <img src={fb} alt='fb' />
+        </li>
+      </ul>
+      <div className='waves'>
+        <div className='wave' id='wave1'></div>
+        <div className='wave' id='wave2'></div>
+        <div className='wave' id='wave3'></div>
+        <div className='wave' id='wave4'></div>
+      </div>
+
+
+    </FooterContainer>
   )
 }
 
-const  FooterContainer = styled.footer`
+const FooterContainer = styled.footer`
   /* margin-top: 18.5rem; */
   bottom: 0;
   position: fixed;

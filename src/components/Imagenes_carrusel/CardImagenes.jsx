@@ -1,11 +1,4 @@
-// import { Link } from 'react-router-dom';
-// import styled from 'styled-components';
-
-
-
-// const Button = styled(Link)`
-// `;
-
+import './carrusel.css';
 
 const CardImagenes = ({ imagen }) => {
 
