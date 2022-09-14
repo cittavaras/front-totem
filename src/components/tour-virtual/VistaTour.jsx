@@ -29,9 +29,10 @@ export const VistaTour = () => {
 
     return (
         <Div>
-            <img src={Position===1 ? EdificioB : ''} />
-            <img src={Position===2 ? TorreB : ''} />
-            <img src={Position===3 ? PatioB : ''} />
+            
+            <img className='fondocodigo' src={Position===1 ? EdificioB : ''} />
+            <img className='fondocodigo' src={Position===2 ? TorreB : ''} />
+            <img className='fondocodigo' src={Position===3 ? PatioB : ''} />
             <App className='posicion'
                 Position={Position}
                 setposition={setposition}

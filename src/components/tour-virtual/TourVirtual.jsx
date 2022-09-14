@@ -18,7 +18,7 @@ export const TourVirtual = () => {
   return (
     <>
       <Div>
-        <img className="fondocodigo" src={fondocodigo} />
+        <img className="Fondocodigo" src={fondocodigo} />
         <img className="logo-tour" src={logoTour} />
         <img className="totitour2" src={totitour2} />
         <div className="div-title">

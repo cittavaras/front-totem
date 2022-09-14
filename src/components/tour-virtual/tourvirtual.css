@@ -189,16 +189,6 @@
 
 }
 
-
-.EdificioB {
-
-    position: absolute;
-    top: -100px;
-}
-
-
-
-
 .fondo-qr {
     position: absolute;
     left: -250px;
@@ -233,7 +223,7 @@
     top: -60px;
     left: 530PX;
     width: 265px;
-    max-width: 230px;
+    max-width: 220px;
 }
 
 
