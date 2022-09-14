@@ -1,6 +1,6 @@
 import totiTour from './img/toti-tour.png'
 import EdificioB from "./img/Fondos/EdificioB.png";
-import PatioBb from "./img/Fondos/PatioB.png";
+import PatioB from "./img/Fondos/PatioB.png";
 import TorreB from "./img/Fondos/TorreB.png";
 import styled from 'styled-components';
 import "./tourvirtual.css";
@@ -31,7 +31,7 @@ export const VistaTour = () => {
         <Div>
             <img src={Position===1 ? EdificioB : ''} />
             <img src={Position===2 ? TorreB : ''} />
-            <img src={Position===3 ? PatioBb : ''} />
+            <img src={Position===3 ? PatioB : ''} />
             <App className='posicion'
                 Position={Position}
                 setposition={setposition}
@@ -54,6 +54,7 @@ height: 100vh;
 margin-top: -11rem;
 background-size: 1080px 1920px;
 background-position: center;
+z-index: 9999;
 `;
 const Boton = styled.button`
 ${'' /* margin-top: -20px; */}

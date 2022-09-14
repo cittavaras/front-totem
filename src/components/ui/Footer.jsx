@@ -10,7 +10,7 @@ import styled from 'styled-components';
 export const Footer = () => {
   return (
     <FooterContainer>
-      <h1 className='text-qr'>PRECIONA Y ESCANEA EL QR</h1>
+      <h1 className='text-qr'>PRESIONA Y ESCANEA EL QR</h1>
       <ul className='social-icon'>
         <li><BsWhatsapp className='icon-wsp' />
           <img src={wsp} alt='wsp' />

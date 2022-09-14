@@ -108,7 +108,7 @@ export const Encuentra = () => {
             }
 
             <form onSubmit={handleSubmitRut}>
-              <P className='titulo-rut'>Según asignatura</P>
+              <P className='titulo-rut'>Según tu rut</P>
               <Input  className='btn-font' negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
                 maxLength={9} />
             </form>

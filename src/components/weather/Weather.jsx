@@ -14,8 +14,11 @@ export const Weather = () => {
         const datetime = new Date();
         const hour = datetime.getHours();
         const minute = ('0' + datetime.getMinutes()).slice(-2);
+        const dia = datetime.toLocaleDateString('es-MX', {weekday:'long'}) 
+        const fecha = datetime.getDate();
 
-        return `${hour}:${minute}`;
+
+        return `${hour}:${minute} ${dia} ${fecha}`;
     };
 
     useEffect(() => {

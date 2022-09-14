@@ -190,13 +190,6 @@
 }
 
 
-
-
-
-
-
-
-
 .EdificioB {
 
     position: absolute;
@@ -239,7 +232,66 @@
 }
 .img-qr{
     position: absolute;
-    top: -80px;
-    left: 510px;
+    top: -60px;
+    left: 530PX;
     width: 265px;
+    max-width: 230px;
+}
+.torreA{
+  
+    position: absolute;
+    top: 120px;
+    font-size: 35px;
+    line-height: 54px;
+    align-items: center;  font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+
+}
+.PatioA{
+  
+    position: absolute;
+    top: -120px;
+    font-size: 35px;
+    line-height: 54px;
+    align-items: center;  font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+
+}
+.VarasB{
+  
+    position: absolute;
+    top: -120px;
+    font-size: 35px;
+    line-height: 54px;
+    align-items: center;  font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+
+}
+.PatioB{
+  
+    position: absolute;
+    top: 120px;
+    font-size: 35px;
+    line-height: 54px;
+    align-items: center;  font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+.EdificioC{
+  
+    position: absolute;
+    top: -120px;
+    font-size: 35px;
+    line-height: 54px;
+    align-items: center;  font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+
+}
+.VarasC{
+  
+    position: absolute;
+    top: 120px;
+    font-size: 35px;
+    line-height: 54px;
+    align-items: center;  font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
 }

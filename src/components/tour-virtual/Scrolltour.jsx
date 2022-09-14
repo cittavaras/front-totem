@@ -37,33 +37,39 @@ const App = ({ Position, setposition }) => {
         }}
         src={btntp} />
       <div
-        // onScroll={handleScroll}
+       onScroll={handleScroll}
         style={{
           border: "black",
           width: "300px",
           height: "100px",
-          // overflowY: "scroll",
           display: "flex",
           flexDirection: "column",
           fontFamily: "sans-serif",
           fontsize: "70",
           position: "absolute"
+          
         }}
         className='scroll'
       >
         {Position === 1 && <li className="contenedor-qr">
-          <p>EDIFICIO VARAS</p>
+          <h1>EDIFICIO VARAS</h1>
+          <h1 className="torreA">EDIFICIO TORRE</h1>
+          <h1 className="PatioA">PATIO CENTRAL</h1>
           <img className="img-qr" src={Edificio} alt="Edificio" />
 
         </li>}
 
         {Position === 2 && <li className="contenedor-qr">
-          <p>TORRE</p>
+          <h1>EDIFIO TORRE</h1>
+          <h1 className="VarasB">EDIFICiO VARAS </h1>
+          <h1 className="PatioB">PATIO CENTRAL</h1>
           <img className="img-qr" src={Torre} alt="Torre" />
 
         </li>}
         {Position === 3 && <li className="contenedor-qr">
-          <p>PATIO</p>
+          <h1>PATIO CENTRAL</h1>
+          <h1 className="EdificioC">EDIFICIO TORRE </h1>
+          <h1 className="VarasC">EDIFICIO VARAS</h1>
           <img className="img-qr" src={Patio} alt="Patio" />
 
         </li>}
