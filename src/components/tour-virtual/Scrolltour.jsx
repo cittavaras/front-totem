@@ -51,25 +51,26 @@ const App = ({ Position, setposition }) => {
         }}
         className='scroll'
       >
+
         {Position === 1 && <li className="contenedor-qr">
-        <h1 className="VarasA">EDIFICIO VARAS</h1>
-          <h1 className="torreA">EDIFICIO TORRE</h1>
-          <h1 className="PatioA">PATIO CENTRAL</h1>
+          <h1 className="VarasA">EDIFICIO VARAS</h1>
+          <h1 onClick={() => setposition(Position + 1)} className="torreA">EDIFICIO TORRE</h1>
+          <h1 onClick={() => setposition(Position + 2)} className="PatioA">PATIO CENTRAL</h1>
           <img className="img-qr" src={Edificio} alt="Edificio" />
 
         </li>}
 
         {Position === 2 && <li className="contenedor-qr">
-        <h1 className="TorreB">EDIFICIO TORRE </h1>
-          <h1 className="VarasB">EDIFICiO VARAS </h1>
-          <h1 className="PatioB">PATIO CENTRAL</h1>
+          <h1 className="TorreB">EDIFICIO TORRE </h1>
+          <h1 onClick={() => setposition(Position - 1)} className="VarasB">EDIFICIO VARAS </h1>
+          <h1 onClick={() => setposition(Position + 1)} className="PatioB">PATIO CENTRAL</h1>
           <img className="img-qr" src={Torre} alt="Torre" />
 
         </li>}
         {Position === 3 && <li className="contenedor-qr">
-        <h1 className="PatioC">PATIO CENTRAL </h1>
-          <h1 className="EdificioC">EDIFICIO TORRE </h1>
-          <h1 className="VarasC">EDIFICIO VARAS</h1>
+          <h1 className="PatioC">PATIO CENTRAL </h1>
+          <h1 onClick={() => setposition(Position - 1)} className="EdificioC">EDIFICIO TORRE </h1>
+          <h1 onClick={() => setposition(Position - 2)} className="VarasC">EDIFICIO VARAS</h1>
           <img className="img-qr" src={Patio} alt="Patio" />
 
         </li>}
