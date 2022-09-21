@@ -8,6 +8,7 @@ import { RiEmotionUnhappyLine } from "react-icons/ri";
 import totiHead from './icons/toti-decabeza.png'
 
 const EvaluacionForm = () => {
+
   const { preguntaSeleccionada, setPreguntaSeleccionada, categoriaEvaluacion, setCategoriaEvaluacion } = useOpciones();
   const navigate = useNavigate();
   console.log(categoriaEvaluacion)
@@ -16,6 +17,7 @@ const EvaluacionForm = () => {
     respuesta: "",
     correo: "",
   });
+
   const [active, setActive] = useState(false);
 
   console.log(preguntaSeleccionada)
@@ -57,29 +59,15 @@ const EvaluacionForm = () => {
         <ul>
           <div className="div-eva">
             <li className='lista-eva'>
-              <input className="input-eva" onClick={(e) => handleClick(e)} value="SI" readOnly /> 
+              <input className="input-eva" onClick={(e) => handleClick(e)} value="SI" readOnly />
               <BiSmile className="icon-1" />
             </li>
             <li className='lista-eva'>
-              <input id='inputNo'  className="input-eva" onClick={(e) => handleClick(e)} value="NO" readOnly />
+              <input id='inputNo' className="input-eva" onClick={(e) => handleClick(e)} value="NO" readOnly />
               <RiEmotionUnhappyLine className="icon-2" />
             </li>
           </div>
         </ul>
-        {/* {active && (
-          <>
-            <p className="p-finalizar">Ingresa tu correo para finalizar</p>
-            <input
-              className="inp-correo"
-              type="text"
-              name=""
-              id=""
-              onChange={handleInputChange}
-              value={correo || ""}
-              placeholder=""
-            />
-          </>
-        )} */}
 
         <button className="btn-enviar" type="submit">Enviar</button>
       </form>

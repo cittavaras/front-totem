@@ -1,4 +1,4 @@
-span{
+span {
     color: #fff;
     font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,14 +6,20 @@ span{
 
 .weather {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 12px;
     position: absolute;
     top: 0px;
-    
+
 }
+
 .timeLocation {
-    margin-right: 300px;
+    margin-right: 400px;
     display: flex;
+}
+
+.dateLocation {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -130px;
 }

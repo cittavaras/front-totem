@@ -22,7 +22,7 @@ export const Weather = () => {
     };
     const fechas = () => {
         const fecha = new Date();
-        const day = fecha.toLocaleDateString('es-MX', { weekday: 'long' })
+        const day = fecha.toLocaleDateString('es-MX', { weekday: 'short' })
         const num = fecha.getDate();
         const mes = fecha.toLocaleDateString('es-MX', { month: 'short' })
 
@@ -44,7 +44,7 @@ export const Weather = () => {
             <span className="timeLocation" ref={span}>
                 {time()}
             </span>
-            <span className="timeLocation" ref={span}>
+            <span className="dateLocation" ref={span}>
                 {fechas()}
             </span>
             <Span className="">{weather.temp_c}°<FontAwesomeIcon icon={faCloudSun} /></Span>
