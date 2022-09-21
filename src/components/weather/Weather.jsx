@@ -9,21 +9,30 @@ export const Weather = () => {
 
 
     const span = useRef();
+
     const time = () => {
         const datetime = new Date();
         let hour = datetime.getHours();
         const minute = ('0' + datetime.getMinutes()).slice(-2);
-        const dia = datetime.toLocaleDateString('es-MX', {weekday:'long'}) 
-        const fecha = datetime.getDate();
-        const mes = datetime.toLocaleDateString('es-MX', {month:'short'}) 
+
+        const horas = `${hour}:${minute}`;
 
 
-        return `${hour}:${minute} ${dia} ${fecha} ${mes}`;
+        return horas;
     };
+    const fechas = () => {
+        const fecha = new Date();
+        const day = fecha.toLocaleDateString('es-MX', { weekday: 'long' })
+        const num = fecha.getDate();
+        const mes = fecha.toLocaleDateString('es-MX', { month: 'short' })
+
+
+        return `${day} ${num} ${mes}`;
+    }
 
     useEffect(() => {
         const cl = setInterval(() => {
-            span.current.innerHTML = `${time()}`;
+            span.current.innerHTML = `${fechas()}`;
         }, 1000);
         return () => clearInterval(cl);
     }, [])
@@ -35,7 +44,9 @@ export const Weather = () => {
             <span className="timeLocation" ref={span}>
                 {time()}
             </span>
-
+            <span className="timeLocation" ref={span}>
+                {fechas()}
+            </span>
             <Span className="">{weather.temp_c}°<FontAwesomeIcon icon={faCloudSun} /></Span>
 
         </div>
