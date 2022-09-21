@@ -26,7 +26,8 @@ const NavBar = () => {
           || location.pathname === '/inicio/preguntas'
             || location.pathname === '/inicio/evaluacion'
             || location.pathname === '/inicio/encuentratuprofe/resultado/salas'
-            || location.pathname === '/inicio/tour/:vistatour' ?
+            || location.pathname === '/inicio/tour/:vistatour'
+            || location.pathname === '/inicio/Agendate' ?
             (<img src={prev} alt="prev" />) :
             (<img onClick={() => navigate(-1)} src={prev_activo} alt="prev" />)
         }

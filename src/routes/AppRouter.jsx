@@ -15,6 +15,7 @@ import { BuscarRut } from '../components/busca-tu-profe/BuscarRut'
 import Salas from '../components/busca-tu-profe/Salas'
 import { TourVirtual } from '../components/tour-virtual/TourVirtual'
 import { VistaTour } from '../components/tour-virtual/VistaTour'
+import { Agendate } from '../components/agendate/Agendate'
 
 
 const AppRouter = () => {
@@ -52,6 +53,7 @@ const AppRouter = () => {
           <Route path='encuentratuprofe/:buscarporrut/salas' element={<Salas />} />
           <Route path='tour' element={<TourVirtual />} />
           <Route path='tour/:vistatour' element={<VistaTour />} />
+          <Route path='agendate' element={<Agendate/>}/>
 
         </Route>
       </Routes>
