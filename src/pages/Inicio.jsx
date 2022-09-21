@@ -5,6 +5,7 @@ import lupa from '../pages/image/lupa.png'
 import tour from '../pages/image/TOURVIRTUAL.png'
 import Toti from "../components/ui/Toti";
 import ask from '../components/ui/icons/preguntas.png'
+import agenda from  '../pages/image/Agendate.png'
 import { crearClick } from "../helpers/getClicks";
 import { useEffect, useState } from "react";
 
@@ -22,7 +23,7 @@ const Container = styled.div`
 
 const Enlace = styled(Link)`
   text-decoration: none;
-  z-index: 1;
+  z-index: 2;
 `;
 const P = styled.p`
   font-size: 3rem;
@@ -91,6 +92,13 @@ const Inicio = () => {
               <Enlace className="enlaces" to="tour">
                 <img src={tour} alt="icono" />
                 Tour Virtual
+                <Span>En proceso</Span>
+              </Enlace>
+            </li>
+            <li>
+              <Enlace className="enlaces" to="Agendate">
+                <img src={agenda} alt="icono" />
+               Agendate con 
                 <Span>En proceso</Span>
               </Enlace>
             </li>
