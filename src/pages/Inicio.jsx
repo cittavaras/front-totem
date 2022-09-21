@@ -84,7 +84,6 @@ const Inicio = () => {
               <Enlace className="enlaces" to="encuentratuprofe">
                 <img src={lupa} alt="icono" />
                 Encuentra tu Profe
-                <Span>En proceso</Span>
               </Enlace>
             </li>
             <li>

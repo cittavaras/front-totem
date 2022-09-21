@@ -29,48 +29,51 @@ const Preguntas = () => {
     if (!categorias) {
       return;
     }
-    // console.log(categorias));
     let resultadoBusqueda = categorias.filter((elemento) => {
       if (elemento.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
-        // return elemento
+        
         return elemento;
       }
     });
-    // setProductos(resultadoBusqueda);
     console.log(resultado)
     setResultado(resultadoBusqueda)
   }
   return (
     <>
-      {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
-
-
       <div className='div-pre'>
-        {/* <div className='rectangulo' /> */}
         <Logo />
-
-
         <p className='preg'>¿EN QUÉ TE PUEDO AYUDAR?</p>
         <DivBusqueda>
-          <input className='input-palcl' onChange={handleInputChange} value={busqueda} type="text" placeholder='Ingrese la categoría' />
+          <input
+            className='input-palcl'
+            onChange={handleInputChange}
+            value={busqueda}
+            type="text"
+            placeholder='Ingrese la categoría'
+          />
           <IconBusqueda src={busquedaIcon} alt="" />
         </DivBusqueda>
         <img src={barraBusqueda} alt="" />
-
         <Div className='example'>
-
           {activePreguntas === false && categorias.length > 0 && (
             categorias.map((categoria, _id) => (
               <li className='preguntas-li' key={_id}>
-                <Categorias className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Categorias>
+                <Categorias
+                  className='name-cat'
+                  to={{ pathname: `${categoria}` }}>
+                  {categoria}
+                </Categorias>
               </li>
             ))
           )}
-
           {activePreguntas === true && resultado.length > 0 && (
             resultado.map((categoria, _id) => (
               <li className='preguntas-li' key={_id}>
-                <Categorias className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Categorias>
+                <Categorias
+                  className='name-cat'
+                  to={{ pathname: `${categoria}` }}>
+                  {categoria}
+                </Categorias>
               </li>
             ))
           )}

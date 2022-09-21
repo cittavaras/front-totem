@@ -8,7 +8,6 @@ import './preguntas.css'
 
 import './preguntas.css';
 import { Logo } from './logo/Logo';
-// import { Footer } from '../ui/Footer';
 
 const Enlace = styled(Link)`
     text-decoration: none;
@@ -22,7 +21,6 @@ const Categorias = () => {
 
 
     const [subcategorias, setSubCategorias] = useState({});
-    // console.log(subcategoria)
 
     useEffect(() => {
      
@@ -35,16 +33,9 @@ const Categorias = () => {
                  navigate(`${resultado[0].subcategoria}`);
              }
                 setSubCategorias(resultado)
-
-            
-
-          
-            // console.log('1')
         }
         comprobar();
    
-
-        // console.log(subcategorias[0].subcategoria)
 
     }, [  ])
 
@@ -98,14 +89,11 @@ const Div = styled.div`
   display: flex;
   gap: 8rem;
   justify-content: center;
-  align-items:center;
-  /* text-transform: lowercase ;    */
-  
+  align-items:center;  
 `;
 
 
 const Flecha = styled.img`
-  /* margin-top: 1rem; */
   position: relative;
   color: #FFB71B;
   width: 8%;
