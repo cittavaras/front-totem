@@ -16,13 +16,13 @@ export const Agendate = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 30000);
+    }, 60000);
   }, []);
 
 
   return (
     <>
-      <img className='' src={fondo} />
+      <img className='background' src={fondo} />
       <div className='all'>
         <img className="agenda" src={agenda} />
         <img className='totiup' src={totiup} />

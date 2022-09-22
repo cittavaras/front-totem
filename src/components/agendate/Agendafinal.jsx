@@ -3,6 +3,10 @@ import "./agenda.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import fondo from "./icons/background.png";
+import TotiHead from '../ui/TotiHead';
+import circulo from "./icons/circulo.png";
+import qr from "./icons/agendateqr.png";
+
 
 export const Agendafinal = () => {
   const navigate = useNavigate();
@@ -11,19 +15,23 @@ export const Agendafinal = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 9000000);
+    }, 90000);
   }, []);
 
   return (
     <>
+    <img className='' src={fondo} />
       <div>
-
-        <img className='background' src={fondo} />
-        <div className="letra-color">
-          <h1 className="title-agenda">Descubre una nueva manera de agendar los </h1>
-          <h1 className="title-servicios">servicios que te ofrece Antonio Varas </h1>
+      <img className='circulo' src={circulo} />
+      <img className='qr' src={qr} />
+      <h1 className="Escanea">Escanea el siguiente codigo para</h1>
+      <h1 className="Luego">luego agendar:</h1>
+        <div className="Fondo-agenda">
+          <h1 className="service">Servicios</h1>
         </div>
-
+        
+        
+        <TotiHead></TotiHead>
       </div>
     </>
   );

@@ -2,8 +2,8 @@
 position: absolute;
 left: 380px;
 top: 200px;
-
 }
+
 
 .title-agenda{
     font-style: normal;
@@ -76,4 +76,77 @@ top: 200px;
     top: 700px;
     position: absolute !important;
     left: 860px;
+}
+
+
+
+
+.service{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    right: 10px;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+
+.Fondo-agenda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1400px;
+    left: -10px;
+  
+    width: 654px;
+    height: 118px;
+    background: rgba(213, 73, 127, 0.5);
+    border-radius: 50px;
+}
+.circulo{
+top: 700px;
+width: 450px;
+left: 600px;
+position: fixed;
+}
+.qr{
+    top: 780px;
+    width: 200px;
+    height: 200px;
+    left: 730px;
+    position: absolute;
+}
+
+.Escanea{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    right: 100px;
+    top: 350px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    position: absolute;
+}
+.Luego{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    right: 100px;
+    top: 400px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    position: absolute;
+
 }

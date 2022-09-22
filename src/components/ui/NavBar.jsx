@@ -12,14 +12,18 @@ const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { categoria, subcategoria } = useParams();
-  // const ruta = (`/inicio/preguntas/${categoria}/${subcategoria}`).replace(/\s+/g, '%20')
+  // console.log(location.pathname.normalize('NFD').replace(/[\u0300-\u036f]/g,""))
+  const ruta = (`/inicio/preguntas/${categoria}/${subcategoria}`).replace(/\s+/g, '%20')
+  // console.log(ruta)
 
   return (
     <>
+      {/* {location.pathname === ruta ? '' :( */}
+
       <Div>
         {
           location.pathname === '/inicio'
-            || location.pathname === '/inicio/preguntas'
+          || location.pathname === '/inicio/preguntas'
             || location.pathname === '/inicio/evaluacion'
             || location.pathname === '/inicio/encuentratuprofe/resultado/salas'
             || location.pathname === '/inicio/tour/:vistatour'
@@ -28,7 +32,10 @@ const NavBar = () => {
             (<img onClick={() => navigate(-1)} src={prev_activo} alt="prev" />)
         }
         <Home active={location.pathname} onClick={() => navigate(location.pathname === '/inicio' ? '/' : '/inicio')} src={home} alt="home" />
+
       </Div>
+      {/* )} */}
+
     </>
 
   )
@@ -52,6 +59,7 @@ const Home = styled.img`
   opacity: ${props => props.active === '/inicio/evaluacion'
     || props.active === '/inicio/encuentratuprofe/resultado/salas'
     || props.active === '/inicio/tour/:vistatour' ? '50%' : '100%'} ;
+    
   pointer-events:  ${props => props.active === '/inicio/evaluacion'
     || props.active === '/inicio/encuentratuprofe/resultado/salas'
     || props.active === '/inicio/tour/:vistatour' ? 'none' : ''};
