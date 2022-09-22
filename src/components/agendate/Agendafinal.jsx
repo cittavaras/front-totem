@@ -10,7 +10,19 @@ import qr from "./icons/agendateqr.png";
 
 export const Agendafinal = () => {
   const navigate = useNavigate();
-
+  const servicios = [
+    '-Agenda Orientacion Psicologica',
+    '-Asesoría en curriculum vitae',
+    '-Coordinador CIE',
+    '-Coordinadores de carrera',
+   ' -Cancha sede',
+ '   -Coordinacion de practicas',
+ '   -Director de sede',
+ '   -Director(a)de carrera ',
+    '-jefe de programa transervales',
+ '   -Subdirector académico',
+    '-Subdirector de desarrollo Estudiantil'
+  ]
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,16 +32,17 @@ export const Agendafinal = () => {
 
   return (
     <>
-    <img className='' src={fondo} />
+    <img className='a' src={fondo} />
       <div>
       <img className='circulo' src={circulo} />
       <img className='qr' src={qr} />
       <h1 className="Escanea">Escanea el siguiente codigo para</h1>
-      <h1 className="Luego">luego agendar:</h1>
+      <h1 className="Luego">luego agendar:</h1>\
         <div className="Fondo-agenda">
-          <h1 className="service">Servicios</h1>
-        </div>
-        
+        <h1 className="services"> Servicios </h1>
+        </div> 
+<div className='servicio' >    {servicios.map ((servicio) => (<p>{servicio}</p>))}  </div>
+       
         
         <TotiHead></TotiHead>
       </div>

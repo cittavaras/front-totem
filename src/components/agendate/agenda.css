@@ -1,16 +1,22 @@
 .agenda{
 position: absolute;
-left: 380px;
+/* left: 380px; */
 top: 200px;
 }
+.all{
+ display: flex;
+justify-content: center;
+}
 
-
+.a{
+    position: relative;
+}
 .title-agenda{
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
-    line-height: 54px;
-    right: 250px;
+    line-height: px;
+    /* right: 50px; */
     display: flex;
     align-items: center;
     font-family: 'Inter', sans-serif;
@@ -20,8 +26,8 @@ top: 200px;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
-    line-height: 54px;
-    right: 290px;
+    line-height: 14px;
+    /* right: 290px; */
     display: flex;
     align-items: center;
     font-family: 'Inter', sans-serif;
@@ -53,9 +59,10 @@ top: 200px;
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 2;
     top: -1220px;
-    left: 115px;
-    right: 100px;
+    /* left: 115px; */
+    /* right: 100px; */
     width: 769px;
     height: 254px;
     background: rgba(213, 73, 127, 0.5);
@@ -65,28 +72,30 @@ top: 200px;
 .totiup{
     top: 420px;
     position: absolute;
-    left: 330px;
+    /* left: 330px; */
 }
 .totiright{
     top: 700px;
     position: absolute !important;
-    left: 50px;
+    left: 100px;
+    z-index: 4;
 }
 .totileft{
     top: 700px;
     position: absolute !important;
-    left: 860px;
+    right: 100px;
+    z-index: 4;
 }
 
 
 
 
-.service{
+
+.services{
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size:45px;
     line-height: 54px;
-    right: 10px;
     top: 200px;
     display: flex;
     align-items: center;
@@ -101,9 +110,8 @@ top: 200px;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -1400px;
-    left: -10px;
-  
+    top: -1450px;
+    left: -30px;
     width: 654px;
     height: 118px;
     background: rgba(213, 73, 127, 0.5);
@@ -149,4 +157,13 @@ position: fixed;
     color: #FFFFFF;
     position: absolute;
 
+}
+
+.servicio
+{
+position: absolute;
+color: #FFFFFF;
+right: 500px;
+line-height: 100px;
+top: 600px;
 }

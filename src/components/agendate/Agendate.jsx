@@ -22,7 +22,7 @@ export const Agendate = () => {
 
   return (
     <>
-      <img className='background' src={fondo} />
+      <img className='a' src={fondo} />
       <div className='all'>
         <img className="agenda" src={agenda} />
         <img className='totiup' src={totiup} />

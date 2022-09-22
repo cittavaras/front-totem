@@ -59,7 +59,7 @@ const Home = styled.img`
   opacity: ${props => props.active === '/inicio/evaluacion'
     || props.active === '/inicio/encuentratuprofe/resultado/salas'
     || props.active === '/inicio/tour/:vistatour' ? '50%' : '100%'} ;
-    
+    || 
   pointer-events:  ${props => props.active === '/inicio/evaluacion'
     || props.active === '/inicio/encuentratuprofe/resultado/salas'
     || props.active === '/inicio/tour/:vistatour' ? 'none' : ''};
