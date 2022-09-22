@@ -13,13 +13,13 @@ span {
 }
 
 .timeLocation {
-    margin-right: 400px;
+    margin-right: 500px;
     display: flex;
 }
 
 .dateLocation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
-    left: -130px;
+    left: -250px;
 }

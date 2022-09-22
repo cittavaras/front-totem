@@ -16,7 +16,7 @@ import Salas from '../components/busca-tu-profe/Salas'
 import { TourVirtual } from '../components/tour-virtual/TourVirtual'
 import { VistaTour } from '../components/tour-virtual/VistaTour'
 import { Agendate } from '../components/agendate/Agendate'
-
+import { Agendafinal } from '../components/agendate/Agendafinal'
 
 const AppRouter = () => {
   const location = useLocation();
@@ -54,6 +54,8 @@ const AppRouter = () => {
           <Route path='tour' element={<TourVirtual />} />
           <Route path='tour/:vistatour' element={<VistaTour />} />
           <Route path='agendate' element={<Agendate/>}/>
+          <Route path='agendate/:agendafinal' element={<Agendafinal/>} />
+      
 
         </Route>
       </Routes>

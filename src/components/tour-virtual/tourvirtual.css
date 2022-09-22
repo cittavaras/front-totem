@@ -262,7 +262,7 @@
 
 .TorreB{
   
-    position: absolute;
+    position: relative;
     top: 0px;
     font-size: 35px;
     line-height: 54px;
