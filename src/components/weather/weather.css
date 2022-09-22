@@ -9,17 +9,24 @@ span {
     padding: 12px;
     position: absolute;
     top: 0px;
+    left: -10px;
 
 }
 
 .timeLocation {
-    margin-right: 400px;
-    display: flex;
+    position: relative;
+    left: 10px;    
 }
 
 .dateLocation {
     display: flex;
+    flex-direction: row !important;
+    position: relative;
+    left: 200px;
+}
+.clima{
+    display: flex;
     flex-direction: row;
     position: relative;
-    left: -130px;
+    left: 400px;
 }

@@ -47,13 +47,8 @@ export const Weather = () => {
             <span className="dateLocation" ref={span}>
                 {fechas()}
             </span>
-            <Span className="">{weather.temp_c}°<FontAwesomeIcon icon={faCloudSun} /></Span>
+            <span className='clima'>{weather.temp_c}°<FontAwesomeIcon icon={faCloudSun} /></span>
 
         </div>
     )
 }
-
-
-const Span = styled.span`
-display: flex:  
-`;
