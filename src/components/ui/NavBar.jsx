@@ -12,18 +12,14 @@ const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { categoria, subcategoria } = useParams();
-  // console.log(location.pathname.normalize('NFD').replace(/[\u0300-\u036f]/g,""))
-  const ruta = (`/inicio/preguntas/${categoria}/${subcategoria}`).replace(/\s+/g, '%20')
-  // console.log(ruta)
+  // const ruta = (`/inicio/preguntas/${categoria}/${subcategoria}`).replace(/\s+/g, '%20')
 
   return (
     <>
-      {/* {location.pathname === ruta ? '' :( */}
-
       <Div>
         {
           location.pathname === '/inicio'
-          || location.pathname === '/inicio/preguntas'
+            || location.pathname === '/inicio/preguntas'
             || location.pathname === '/inicio/evaluacion'
             || location.pathname === '/inicio/encuentratuprofe/resultado/salas'
             || location.pathname === '/inicio/tour/:vistatour'
@@ -32,10 +28,7 @@ const NavBar = () => {
             (<img onClick={() => navigate(-1)} src={prev_activo} alt="prev" />)
         }
         <Home active={location.pathname} onClick={() => navigate(location.pathname === '/inicio' ? '/' : '/inicio')} src={home} alt="home" />
-
       </Div>
-      {/* )} */}
-
     </>
 
   )
