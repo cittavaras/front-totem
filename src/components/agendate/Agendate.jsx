@@ -16,7 +16,7 @@ export const Agendate = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 60000);
+    }, 30000);
   }, []);
 
 
