@@ -1,7 +1,6 @@
-import './findStyles.css'
-import { useState } from 'react';
+import './findStyles.css';
 import styled from "styled-components";
-import fondo from './img/frentesedeblur.png'
+import fondo from './img/frentesedeblur.png';
 
 import { ResultadoRut } from './ResultadoRut';
 import icon from './img/Vector.png'

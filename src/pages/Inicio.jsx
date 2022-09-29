@@ -97,7 +97,7 @@ const Inicio = () => {
             <li>
               <Enlace className="enlaces" to="agendate">
                 <img src={agenda} alt="icono" />
-               Agendate con 
+               Agendate con Varas
                 <Span>En proceso</Span>
               </Enlace>
             </li>

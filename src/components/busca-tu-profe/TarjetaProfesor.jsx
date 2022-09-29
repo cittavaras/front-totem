@@ -1,5 +1,6 @@
-// import useOpciones from '../../hooks/useOpciones';
+
 import './findStyles.css';
+
 export const TarjetaProfesor = ({ nombre_docente, Nom_Asignatura }) => {
     return (
         <div className='contenedor'>

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import fondo from './img/frentesedeblur.png'
 
@@ -82,8 +82,8 @@ export const Encuentra = () => {
     })
     navigate('resultado')
   }
-  
-  
+
+
   return (
     <>
       <Container>
@@ -94,14 +94,29 @@ export const Encuentra = () => {
           <Contenedor >
             <form onSubmit={handleSubmitName}>
               <P className='titulo-docente'>Según datos de profesor(a)</P>
-              <Input1  className='btn-font' negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
+              <Input1
+                className='btn-font'
+                negro={keyboard}
+                onClick={activeKeyboard}
+                type='text'
+                readOnly
+                onChange={onChangeProfe}
+                value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'}
+
+              />
             </form>
             {
               keyboard ?
                 (<div
                   className='keyboard'>
                   {
-                    <Keyboard setNameDocente={setProfe} nameDocente={profe} activeKeyboard={activeKeyboard} submit={handleSubmitName} />
+                    <Keyboard
+                      setNameDocente={setProfe}
+                      nameDocente={profe}
+                      activeKeyboard={activeKeyboard}
+                      submit={handleSubmitName}
+
+                    />
                   }
 
                 </div>) : ''
@@ -109,8 +124,17 @@ export const Encuentra = () => {
 
             <form onSubmit={handleSubmitRut}>
               <P className='titulo-rut'>Según datos de alumno(a)</P>
-              <Input  className='btn-font' negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
-                maxLength={9} />
+              <Input
+                className='btn-font'
+                negro={numpad}
+                onClick={activeNumpad}
+                type="text"
+                readOnly
+                onChange={onChangeRut}
+                value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
+                maxLength={9}
+
+              />
             </form>
             {
               numpad ?
@@ -118,7 +142,13 @@ export const Encuentra = () => {
                   className="pad-numerico"
                 >
                   {
-                    <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos} activeNumpad={activeNumpad} submit={handleSubmitRut} />
+                    <NumericPad
+                      setRutAlumnos={setRutAlumnos}
+                      rutAlumnos={rutAlumnos}
+                      activeNumpad={activeNumpad}
+                      submit={handleSubmitRut}
+
+                    />
                   }
 
                 </div>) : ''
