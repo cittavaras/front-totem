@@ -3,6 +3,7 @@ import Patio from "./img/qr/Patioqr.png";
 import Torre from "./img/qr/Torreqr.png";
 import fondoqr from './img/iconos/fondo-qr.png';
 import btntp from './img/iconos/btn-top.png';
+import btnbt from './img/iconos/btn-button.png'
 import "./tourvirtual.css";
 
 const App = ({ Position, setposition }) => {
@@ -30,7 +31,7 @@ const App = ({ Position, setposition }) => {
 
       <img className='img-btn btn-b' onClick={() => {
         if (Position === 1) {
-          return;
+          return setposition(Position + 2);
         } setposition(Position - 1);
         console.log(Position);
       }}
@@ -38,12 +39,14 @@ const App = ({ Position, setposition }) => {
       <img className='img-btn btn-a'
         onClick={() => {
           if (Position === 3) {
-            return;
-          } setposition(Position + 1);
+            return setposition (Position - 2 );
+          } setposition(Position + 1 );
           console.log(Position);
 
+         
+
         }}
-        src={btntp} />
+        src={btnbt} />
       <div
         onScroll={handleScroll}
         style={{
