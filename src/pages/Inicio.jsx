@@ -91,7 +91,6 @@ const Inicio = () => {
               <Enlace className="enlaces" to="tour">
                 <img src={tour} alt="icono" />
                 Tour Virtual
-              
               </Enlace>
             </li>
             <li>
