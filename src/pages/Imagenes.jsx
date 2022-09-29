@@ -13,7 +13,6 @@ import fondo from './image/FrenteAVaras.png'
 
 
 const Button = styled(Link)`
-/* margin-bottom: 3rem; */
 `;
 
 const Div = styled.div`
@@ -62,8 +61,9 @@ const Imagenes = () => {
           </Carousel>
         </div>
 
-        <div className='borde-div'>
-          <Button className='btn-inicio' to='inicio' >PRESIONE AQUI PARA COMENZAR</Button>
+        <div>
+            <Link className='btn-border' to='inicio'/>
+          <Button className='btn-inicio' to='inicio' >PRESIONAR AQUÍ PARA COMENZAR</Button>
         </div>
         <div className='radio-div'></div>
       </Div>

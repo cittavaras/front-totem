@@ -11,7 +11,7 @@ export const Keyboard = ({ nameDocente, setNameDocente, activeKeyboard, submit }
         const value = e.currentTarget.value
         setNameDocente(nameDocente + `${value}`);
     }
-    const onClickDelete = () =>{
+    const onClickDelete = () => {
         setNameDocente(nameDocente.slice(0, -1));
 
     }
@@ -34,7 +34,7 @@ export const Keyboard = ({ nameDocente, setNameDocente, activeKeyboard, submit }
                     <img src={flechaBuscar} alt="" />
                 </Buscar>
             </Div>
-            
+
             <div className='teclado'>
                 <div className="primera-linea">
                     <button value="Q" onClick={onClickName} className="tecla">Q</button>
@@ -69,11 +69,20 @@ export const Keyboard = ({ nameDocente, setNameDocente, activeKeyboard, submit }
                     <button value="B" onClick={onClickName} className="tecla">B</button>
                     <button value="N" onClick={onClickName} className="tecla">N</button>
                     <button value="M" onClick={onClickName} className="tecla">M</button>
-                    <button className="tecla delete" onClick={onClickDelete}><FontAwesomeIcon icon={faDeleteLeft} /></button>
+                    <button
+                        className="tecla delete"
+                        onClick={onClickDelete}>
+                        <FontAwesomeIcon icon={faDeleteLeft} />
+                    </button>
 
                 </div>
                 <div className="barra-espacio">
-                    <button value=" " onClick={onClickName} className="tecla espacio">ESPACIO</button>
+                    <button
+                        value=" "
+                        onClick={onClickName}
+                        className="tecla espacio">
+                        ESPACIO
+                    </button>
                 </div>
             </div>
         </>

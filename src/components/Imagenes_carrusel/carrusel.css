@@ -35,13 +35,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 892px;
-    height: 90px;
+    width: 928px;
+    height: 125px;
     left: 339px;
     top: 1552px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 37px;
     line-height: 45px;
     color: #1E1E1E;
@@ -51,17 +51,15 @@ img {
     text-decoration: none;
 }
 
-.borde-div {
-    width: 898px;
-    height: 114px;
-    left: 296px;
-    /* top: 1510px; */
-    border: 6px solid #FFFFFF;
+.btn-border{
+    position: fixed;
+    width: 958px;
+    height: 149px;
+    left: 40px;
+    top: 1425.5px;
     border-radius: 316.881px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3%;
+    border: 20px solid #FFB71B;
+    filter: blur(10px);
 }
 
 /* redes sociales */

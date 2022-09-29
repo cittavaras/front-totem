@@ -8,7 +8,7 @@ import "./tourvirtual.css";
 
 const App = ({ Position, setposition }) => {
 
-  
+
 
 
 
@@ -18,7 +18,15 @@ const App = ({ Position, setposition }) => {
   };
 
   return (
-    <div style={{ display: "flex", gap: "9rem", marginTop: "45rem", marginLeft: "15rem", position: "absolute", alignItems: "center", top: "70px" }}>
+    <div style={{
+      display: "flex",
+      gap: "9rem",
+      marginTop: "45rem",
+      marginLeft: "15rem",
+      position: "absolute",
+      alignItems: "center",
+      top: "70px"
+    }}>
       <img className='fondo-qr' src={fondoqr} />
 
       <img className='img-btn btn-b' onClick={() => {
@@ -40,7 +48,7 @@ const App = ({ Position, setposition }) => {
         }}
         src={btnbt} />
       <div
-       onScroll={handleScroll}
+        onScroll={handleScroll}
         style={{
           border: "black",
           width: "300px",
@@ -50,7 +58,7 @@ const App = ({ Position, setposition }) => {
           fontFamily: "sans-serif",
           fontsize: "70",
           position: "absolute"
-          
+
         }}
         className='scroll'
       >

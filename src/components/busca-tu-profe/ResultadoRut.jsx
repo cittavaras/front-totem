@@ -1,12 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { getAlumno } from "../../helpers/getRut";
 import useOpciones from "../../hooks/useOpciones";
-import { NumericPad } from "../pad-numerico/NumericPad";
 import { TarjetaProfesor } from "./TarjetaProfesor";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 
 export const ResultadoRut = () => {
 
@@ -19,26 +15,32 @@ export const ResultadoRut = () => {
         navigate('salas')
     }
     useEffect(() => {
-      console.log('carga de profe')
-    
-      return () => {
-        setProfe([''])
-      }
+        console.log('carga de profe')
+
+        return () => {
+            setProfe([''])
+        }
     }, [profe])
-    
+
 
     return (
         <>
 
             <div className="contenedor-menu">
-                <h3 className='titulo-alumno'>{profe.length > 0 ? `${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}` : ''}</h3>
+                <h3
+                    className='titulo-alumno'>
+                    {profe.length > 0 ?
+                        `${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} 
+                         ${tituloAlumno.Apellido_Paterno_Alumno}`
+                        : ''}
+                </h3>
 
                 <p className="seleccionar">Selecciona el ramo que necesites encontrar:</p>
-            
+
                 <ol className="lista-profe example">
                     {profe.length > 0 ?
                         profe.map((profe, index) => (
-                            <div  key={index + 1} onClick={(e) => handleClick({ ...profe }, e)}>
+                            <div key={index + 1} onClick={(e) => handleClick({ ...profe }, e)}>
                                 <TarjetaProfesor  {...profe} />
 
                             </div>
