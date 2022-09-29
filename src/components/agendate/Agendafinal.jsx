@@ -12,16 +12,26 @@ export const Agendafinal = () => {
   const navigate = useNavigate();
 
   const servicios = [
-    '-Agenda Orientacion Psicologica',
+    '-Agenda Orientación Psicológica',
+    
     '-Asesoría en curriculum vitae',
+
     '-Coordinador CIE',
+
     '-Coordinadores de carrera',
+
     '-Cancha sede',
-    '-Coordinacion de practicas',
+
+    '-Coordinación de prácticas',
+
     '-Director de sede',
+
     '-Director(a)de carrera ',
-    '-jefe de programa transervales',
+
+    '-jefe de programa transversales',
+
     '-Subdirector académico',
+
     '-Subdirector de desarrollo Estudiantil'
   ]
 

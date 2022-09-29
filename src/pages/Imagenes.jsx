@@ -63,7 +63,7 @@ const Imagenes = () => {
         </div>
 
         <div className='borde-div'>
-          <Button className='btn-inicio' to='inicio' >COMENZAR</Button>
+          <Button className='btn-inicio' to='inicio' >PRESIONE AQUI PARA COMENZAR</Button>
         </div>
         <div className='radio-div'></div>
       </Div>

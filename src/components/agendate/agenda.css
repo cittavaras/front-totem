@@ -124,17 +124,17 @@
 }
 
 .circulo {
-    top: 700px;
-    width: 450px;
+    top: 800px;
+    width: 500px;
     left: 600px;
     position: fixed;
 }
 
 .qr {
-    top: 780px;
-    width: 200px;
-    height: 200px;
-    left: 730px;
+    top: 870px;
+    width: 220px;
+    height: 220px;
+    left: 750px;
     position: absolute;
 }
 
@@ -170,12 +170,13 @@
 .servicio {
     position: absolute;
     color: #FFFFFF;
-    right: 500px;
+    right: 450px;
     line-height: 100px;
-    top: 600px;
+    top: 700px;
 }
 
 .list {
     display: flex;
     justify-content: start;
+    line-height: 90%;
 }

@@ -91,14 +91,14 @@ const Inicio = () => {
               <Enlace className="enlaces" to="tour">
                 <img src={tour} alt="icono" />
                 Tour Virtual
-                <Span>En proceso</Span>
+              
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="agendate">
                 <img src={agenda} alt="icono" />
-               Agendate con 
-                <Span>En proceso</Span>
+               Agendate con Ivaras
+              
               </Enlace>
             </li>
           </ul>
