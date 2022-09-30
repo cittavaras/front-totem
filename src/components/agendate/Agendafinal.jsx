@@ -12,27 +12,27 @@ export const Agendafinal = () => {
   const navigate = useNavigate();
 
   const servicios = [
-    '-Agenda Orientación Psicológica',
+    '-AGENDA ORIENTACIÓN PSICOLÓGICA',
     
-    '-Asesoría en curriculum vitae',
+    '-ASESORÍA EN CURRICULUM VITAE',
 
-    '-Coordinador CIE',
+    '-COORDINADOR CIE',
 
-    '-Coordinadores de carrera',
+    '-COORDINADORES DE CARRERA',
 
-    '-Cancha sede',
+    '-CANCHA SEDE',
 
-    '-Coordinación de prácticas',
+    '-COORDINACIÓN DE PRÁCTICAS',
 
-    '-Director de sede',
+    '-DIRECTOR DE SEDE',
 
-    '-Director(a)de carrera ',
+    '-DIRECTOR(A)DE CARRERA ',
 
-    '-jefe de programa transversales',
+    '-JEFE DE PROGRAMA TRANSVERSALES',
 
-    '-Subdirector académico',
+    '-SUBDIRECTOR ACADÉMICO',
 
-    '-Subdirector de desarrollo Estudiantil'
+    '-SUBDIRECTOR DE DESARROLLO ESTUDIANTIL'
   ]
 
   useEffect(() => {
