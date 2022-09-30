@@ -92,10 +92,6 @@
     z-index: 4;
 }
 
-
-
-
-
 .services {
     font-style: normal;
     font-weight: 700;
@@ -179,4 +175,5 @@
     display: flex;
     justify-content: start;
     line-height: 90%;
+    text-transform: uppercase;
 }

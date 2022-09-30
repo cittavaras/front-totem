@@ -1,11 +1,11 @@
 import React from 'react'
-import "./agenda.css";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import fondo from "./icons/background.png";
+import './agenda.css';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import fondo from './icons/background.png';
 import TotiHead from '../ui/TotiHead';
-import circulo from "./icons/circulo.png";
-import qr from "./icons/agendateqr.png";
+import circulo from './icons/circulo.png';
+import qr from './icons/agendateqr.png';
 
 
 export const Agendafinal = () => {
