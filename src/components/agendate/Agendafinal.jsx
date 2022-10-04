@@ -1,38 +1,38 @@
 import React from 'react'
-import "./agenda.css";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import fondo from "./icons/background.png";
+import './agenda.css';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import fondo from './icons/background.png';
 import TotiHead from '../ui/TotiHead';
-import circulo from "./icons/circulo.png";
-import qr from "./icons/agendateqr.png";
+import circulo from './icons/circulo.png';
+import qr from './icons/agendateqr.png';
 
 
 export const Agendafinal = () => {
   const navigate = useNavigate();
 
   const servicios = [
-    '-Agenda Orientación Psicológica',
+    '-AGENDA ORIENTACIÓN PSICOLÓGICA',
     
-    '-Asesoría en curriculum vitae',
+    '-ASESORÍA EN CURRICULUM VITAE',
 
-    '-Coordinador CIE',
+    '-COORDINADOR CIE',
 
-    '-Coordinadores de carrera',
+    '-COORDINADORES DE CARRERA',
 
-    '-Cancha sede',
+    '-CANCHA SEDE',
 
-    '-Coordinación de prácticas',
+    '-COORDINACIÓN DE PRÁCTICAS',
 
-    '-Director de sede',
+    '-DIRECTOR DE SEDE',
 
-    '-Director(a)de carrera ',
+    '-DIRECTOR(A)DE CARRERA ',
 
-    '-jefe de programa transversales',
+    '-JEFE DE PROGRAMA TRANSVERSALES',
 
-    '-Subdirector académico',
+    '-SUBDIRECTOR ACADÉMICO',
 
-    '-Subdirector de desarrollo Estudiantil'
+    '-SUBDIRECTOR DE DESARROLLO ESTUDIANTIL'
   ]
 
   useEffect(() => {

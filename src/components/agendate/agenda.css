@@ -92,10 +92,6 @@
     z-index: 4;
 }
 
-
-
-
-
 .services {
     font-style: normal;
     font-weight: 700;
@@ -178,5 +174,7 @@
 .list {
     display: flex;
     justify-content: start;
-    line-height: 90%;
+    font-size: 27px;
+    line-height: 100%;
+    width: 100%;
 }

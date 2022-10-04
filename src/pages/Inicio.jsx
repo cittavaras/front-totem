@@ -5,7 +5,7 @@ import lupa from '../pages/image/lupa.png'
 import tour from '../pages/image/TOURVIRTUAL.png'
 import Toti from "../components/ui/Toti";
 import ask from '../components/ui/icons/preguntas.png'
-import agenda from  '../pages/image/Agendate.png'
+import agenda from '../pages/image/Agendate.png'
 import { crearClick } from "../helpers/getClicks";
 import { useEffect, useState } from "react";
 
@@ -96,7 +96,11 @@ const Inicio = () => {
             <li>
               <Enlace className="enlaces" to="agendate">
                 <img src={agenda} alt="icono" />
+<<<<<<< HEAD
                Agendate con Varas
+=======
+                Agendate con Varas
+>>>>>>> 3860c84d99b77d071da3e105b1eb324da552b7b6
               </Enlace>
             </li>
           </ul>
