@@ -9,7 +9,7 @@ span {
     padding: 12px;
     position: absolute;
     top: 0px;
-    left: -10px;
+    left: -20px;
 
 }
 
@@ -28,5 +28,5 @@ span {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 400px;
+    left: 500px;
 }

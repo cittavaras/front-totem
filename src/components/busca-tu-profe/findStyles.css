@@ -205,3 +205,24 @@ p {
     left: 305px;
 }
 
+.hora{
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    top: -100px; 
+    left: 170px;
+    position: absolute;
+}
+.horas{
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    top: -100px;
+    left:420px;
+    position: absolute;
+}
+.l{
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    top: 90px;
+    left:380px;
+    position: absolute;
+}

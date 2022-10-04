@@ -97,7 +97,6 @@ const Inicio = () => {
               <Enlace className="enlaces" to="agendate">
                 <img src={agenda} alt="icono" />
                Agendate con Varas
-          -=
               </Enlace>
             </li>
           </ul>
