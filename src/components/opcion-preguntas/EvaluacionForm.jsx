@@ -54,18 +54,10 @@ const EvaluacionForm = () => {
     <>
       <img className="totiHead" src={totiHead} />
       <form className="form-eva" action="" onSubmit={handleEnviar}>
-        <p className="p-exp">Considerando la experiencia previa</p>
-        <p className="p-lograste">¿Lograste obtener una respuesta?</p>
+        <p className="p-exp">Que tan conforme quedaste</p>
+        <p className="p-lograste">segun tu experiencia previa</p>
         <ul>
           <div className="div-eva">
-            <li className='lista-eva'>
-              <input className="input-eva" onClick={(e) => handleClick(e)} value="SI" readOnly />
-              <BiSmile className="icon-1" />
-            </li>
-            <li className='lista-eva'>
-              <input id='inputNo' className="input-eva" onClick={(e) => handleClick(e)} value="NO" readOnly />
-              <RiEmotionUnhappyLine className="icon-2" />
-            </li>
           </div>
         </ul>
 
