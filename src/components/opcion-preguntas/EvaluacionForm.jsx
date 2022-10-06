@@ -3,11 +3,9 @@ import useOpciones from "../../hooks/useOpciones";
 import { useNavigate } from "react-router-dom";
 import { enviarEvaluacion } from "../../helpers/getPreguntas";
 import './preguntas.css';
-import { BiSmile } from "react-icons/bi";
-import { RiEmotionUnhappyLine } from "react-icons/ri";
 import totiHead from './icons/toti-decabeza.png'
 import App from "./estrellas";
-
+import ReactStars from "react-rating-stars-component";
 const EvaluacionForm = () => {
 
   const { preguntaSeleccionada, setPreguntaSeleccionada, categoriaEvaluacion, setCategoriaEvaluacion } = useOpciones();
