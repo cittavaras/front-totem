@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import ReactStars from "react-rating-stars-component";
 
 import "./preguntas.css";
