@@ -51,7 +51,7 @@ const EvaluacionForm = () => {
   };
   return (
     <>
-      <img className="totiHead" src={totiHead} />
+
       <form className="form-eva" action="" onSubmit={handleEnviar}>
         <p className="p-exp">Que tan conforme quedaste</p>
         <p className="p-lograste">segun tu experiencia previa</p>
