@@ -8,7 +8,7 @@ function App() {
     <div className="App">
      
       <ReactStars
-        size={110}
+        size={111}
         half={false}
         onChange={newRating => {
           console.log(newRating);
