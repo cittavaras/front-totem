@@ -60,6 +60,9 @@ const EvaluacionForm = () => {
         <ul>
           <div className="div-eva">
             <App></App>
+            <h1 className="estre">Nada conforme</h1>
+            <h1 className="estre1">Bastante</h1>
+            <h1 className="estre2">Muy conforme</h1>
           </div>
         </ul>
 
