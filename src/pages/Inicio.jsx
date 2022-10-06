@@ -96,11 +96,7 @@ const Inicio = () => {
             <li>
               <Enlace className="enlaces" to="agendate">
                 <img src={agenda} alt="icono" />
-<<<<<<< HEAD
                Agendate con Varas
-=======
-                Agendate con Varas
->>>>>>> 3860c84d99b77d071da3e105b1eb324da552b7b6
               </Enlace>
             </li>
           </ul>

@@ -512,3 +512,9 @@ ul .lista-eva:hover .icon-2 {
   width: 50px !important;
   height:  30px !important;
 }
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  top: 650px;
+  position: absolute;
+}

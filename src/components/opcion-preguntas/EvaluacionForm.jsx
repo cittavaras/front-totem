@@ -6,6 +6,7 @@ import './preguntas.css';
 import { BiSmile } from "react-icons/bi";
 import { RiEmotionUnhappyLine } from "react-icons/ri";
 import totiHead from './icons/toti-decabeza.png'
+import App from "./estrellas";
 
 const EvaluacionForm = () => {
 
@@ -58,6 +59,7 @@ const EvaluacionForm = () => {
         <p className="p-lograste">segun tu experiencia previa</p>
         <ul>
           <div className="div-eva">
+            <App></App>
           </div>
         </ul>
 
