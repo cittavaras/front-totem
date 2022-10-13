@@ -8,6 +8,7 @@ import ask from '../components/ui/icons/preguntas.png'
 import agenda from '../pages/image/Agendate.png'
 import { crearClick } from "../helpers/getClicks";
 import { useEffect, useState } from "react";
+import busca from '../pages/image/Busca.png';
 
 const Container = styled.div`
   display: flex;
@@ -99,6 +100,10 @@ const Inicio = () => {
                Agendate con Varas
               </Enlace>
             </li>
+              <Enlace className="enlaces ola" to="examen">
+                <img src={busca} className="ola2" alt="icono" />
+                Búsca Tu Examen
+              </Enlace>
           </ul>
         </Div>
         <Toti />

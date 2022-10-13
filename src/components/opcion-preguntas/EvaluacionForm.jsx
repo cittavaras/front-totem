@@ -6,6 +6,7 @@ import './preguntas.css';
 import totiHead from './icons/toti-decabeza.png'
 import App from "./estrellas";
 import ReactStars from "react-rating-stars-component";
+import reactStars from "react-rating-stars-component";
 const EvaluacionForm = () => {
 
   const { preguntaSeleccionada, setPreguntaSeleccionada, categoriaEvaluacion, setCategoriaEvaluacion } = useOpciones();
@@ -57,7 +58,18 @@ const EvaluacionForm = () => {
         <p className="p-lograste">segun tu experiencia previa</p>
         <ul>
           <div className="div-eva">
-            <App></App>
+            <li className='lista-eva'>
+              <div className="App">
+              <ReactStars
+                size={111}
+                half={false}
+                onChange={newRating => {
+                  console.log(newRating);
+                  <input onClick={(e) => handleClick(e)} value={newRating} readOnly />
+                  
+                }}
+                />
+            </div></li>
             <h1 className="estre">Nada conforme</h1>
             <h1 className="estre1">Bastante</h1>
             <h1 className="estre2">Muy conforme</h1>

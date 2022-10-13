@@ -46,7 +46,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
 
@@ -84,4 +84,31 @@
 .marco .listaEnlace li:hover {
     transform: scale(1.2);
     background: rgb(255, 255, 255);
+}
+ .marco .listaEnlace .ola{
+    width: 550px !important;
+    height: 107px;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    top: 550px;
+    left: 40px;
+    position: absolute;
+    font-family: 'Inter', sans-serif !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        display: flex;
+
+        align-items: center;
+        text-align: center;
+        color: #000000;
+}
+.ola2{
+    margin-right: 100px;
 }

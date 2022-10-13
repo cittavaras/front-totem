@@ -17,7 +17,9 @@ import { TourVirtual } from '../components/tour-virtual/TourVirtual'
 import { VistaTour } from '../components/tour-virtual/VistaTour'
 import { Agendate } from '../components/agendate/Agendate'
 import { Agendafinal } from '../components/agendate/Agendafinal'
-
+import { Examen } from '../components/examen/Examen'
+import { Examenbus } from '../components/examen/Examenbus'
+import { Buscaexamen } from '../components/examen/Buscaexamen'
 const AppRouter = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -55,7 +57,10 @@ const AppRouter = () => {
           <Route path='tour/:vistatour' element={<VistaTour />} />
           <Route path='agendate' element={<Agendate/>}/>
           <Route path='agendate/:agendafinal' element={<Agendafinal/>} />
-      
+          <Route path='examen' element={<Examen/>} />
+          <Route path='examen/:examenbus' element={<Examenbus/>} />
+          <Route path='examen/buscaexamen' element={<Buscaexamen />} /> 
+          // dakjlal
 
         </Route>
       </Routes>
