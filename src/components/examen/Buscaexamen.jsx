@@ -1,18 +1,17 @@
-import fondo from './img/frentesedeblur.png'
-import React from 'react'
+import fondo from './img/frentesedeblur.png';
 import './examen.css';
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import human from './img/human.png'
+import { Examen } from './Examen';
 
 export const Buscaexamen = () => {
     const navigate = useNavigate();
-
-    useEffect(() => {
-        setTimeout(() => {
-            navigate("/");
-        }, 30000);
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         navigate("/");
+    //     }, 30000);
+    // }, []);
 
     return (
         <>

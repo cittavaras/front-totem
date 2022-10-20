@@ -1,34 +1,59 @@
-import fondo from './img/frentesedeblur.png'
-import React from 'react'
+import fondo from './img/frentesedeblur.png';
 import './examen.css';
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
-import exam from './img/exam.png'
+import exam from './img/exam.png';
 import { getExamen } from '../../helpers/getExamen';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { NumericPad } from '../pad-numerico/NumericPad';
+
 export const Examen = () => {
-    const navigate  = useNavigate();
-    const [rutExamen, setRutExamen] = useState([]);
-    const getExamen = async ()=> {
-        const newexamen = await getExamen (rutAlumno);
-        setRutExamen(newexamen);
+
+    const [numpad, SetNumpad] = useState(false);
+    const [rutExamen, setRutExamen] = useState(['194064942']);
+
+    const getExam = async () => {
+        const newExamen = await getExamen(rutExamen);
+        setRutExamen(newExamen);
     }
 
-    getExamen();
+    const activeNumpad = () => {
+        SetNumpad(!numpad);
+        console.log(numpad)
+    }
 
     useEffect(() => {
+        getExam()
         setTimeout(() => {
-            navigate("/");
-        }, 30000);
+        },);
     }, []);
+
+
     return (
         <>
             <img className='a' src={fondo} />
             <div className='Aaa'>
-                <img className='b' src={exam}/>
-                <h1 className='ac'>INGRESA tu RUT</h1>
-                
+                <img className='b' src={exam} />
+
+                <form>
+                    <h1 className='ac'>INGRESA tu RUT</h1>
+                    <input />
+                    {numpad ?
+                        (<div
+                            className="pad-numerico"
+                        >
+                            {
+                                <NumericPad
+                                    setRutAlumnos={''}
+                                    rutAlumnos={''}
+                                    activeNumpad={activeNumpad}
+                                    submit={''}
+
+                                />
+                            }
+                        </div>) : ''
+                    }
+                </form>
             </div>
-            
+
         </>
-    )}
+    )
+}
