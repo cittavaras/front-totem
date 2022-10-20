@@ -4,10 +4,10 @@ import './examen.css';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import exam from './img/exam.png'
-import { NumericPad } from '../pad-numerico/NumericPad';
+import { getExamen } from '../../helpers/getExamen';
 export const Examen = () => {
     const navigate = useNavigate();
-
+    getExamen();
 
     useEffect(() => {
         setTimeout(() => {
