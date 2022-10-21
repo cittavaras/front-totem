@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
+.a{
+    position: absolute;
+    top: 70px;
+}
 .b {
     position: absolute;
     top: 200px;
     left: 450px;
 }
 
-.c {
+/* .c {
     position: absolute;
     top: 350px;
     left: 450px;
-}
+} */
 
 .ac {
     position: absolute;
@@ -35,17 +38,14 @@
     top: 350px;
 
 }
-
-.inputRutExamen {
-    position: absolute;
-    width: 772px;
-    height: 104px;
-    left: 154px;
-    top: 700px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 28px;
-    background: rgba(255, 255, 255, 0.59);
-    border-radius: 22px;
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 35%;
 }
+h1,h3{
+    text-align: center;
+}
+
+

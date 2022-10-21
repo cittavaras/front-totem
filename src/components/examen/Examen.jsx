@@ -6,17 +6,14 @@ import { useEffect, useState } from 'react';
 import { NumericPadEx } from '../pad-numerico/NumericPadEx';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import useOpciones from '../../hooks/useOpciones';
 
 export const Examen = () => {
 
     const [numpad, SetNumpad] = useState(false);
     const [active, setActive] = useState(false);
-    const [rutExamen, setRutExamen] = useState(['']);
+    const { rutExamen, setRutExamen } = useOpciones();
     const nav = useNavigate();
-    // const getExam = async () => {
-    //     const newExamen = await getExamen(rutExamen);
-    //     setRutExamen(newExamen);
-    // }
 
     const activeNumpad = () => {
         SetNumpad(!numpad);
@@ -45,13 +42,12 @@ export const Examen = () => {
 
 
     return (
-        <>
-            <img className='a' src={fondo} />
+        <Cont>
             <div className='Aaa'>
                 <img className='b' src={exam} />
 
                 <form onSubmit={handleSubmitRutExamen}>
-                    <h1 className='ac'>INGRESA tu RUT</h1>
+                    <h1 className='ac'>INGRESA TU RUT</h1>
                     <Input
                         negro={numpad}
                         onClick={activeNumpad}
@@ -79,7 +75,7 @@ export const Examen = () => {
 
             </div>
 
-        </>
+        </Cont>
     )
 }
 const Input = styled.input`
@@ -96,3 +92,11 @@ font-size: 28px;
 background: rgba(255, 255, 255, 0.59);
 border-radius: 22px;
 `;
+const Cont = styled.div` 
+  justify-content: center;
+  background-image: url(${fondo});
+  object-fit: cover;
+  height: 100vh;
+  background-size: 1080px 1920px;
+  background-position: center; 
+  `;

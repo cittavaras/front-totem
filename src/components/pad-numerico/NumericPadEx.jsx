@@ -3,14 +3,18 @@ import "./numericpad.css";
 import flechaBuscar from './icons/flechaBuscar.png';
 import volver from './icons/volver.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faDeleteLeft, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 
 export const NumericPadEx = ({ setRutExamen, rutExamen, activeNumpad, submit }) => {
-  
+
   const onClickRutExamen = (e) => {
     const value = e.currentTarget.value
     setRutExamen(rutExamen + `${value}`);
+  }
+  const onClickDelete = () => {
+    setRutExamen(rutExamen.slice(0, -1));
+
   }
 
   const onCleanRutExamen = () => { setRutExamen('') }
@@ -51,6 +55,11 @@ export const NumericPadEx = ({ setRutExamen, rutExamen, activeNumpad, submit }) 
         <button value="9" onClick={onClickRutExamen} className="numeric-pad-button">9</button>
         <button value="0" onClick={onClickRutExamen} className="numeric-pad-button">0</button>
         <button value="K" onClick={onClickRutExamen} className="numeric-pad-button">K</button>
+        <button
+          className="tecla delete"
+          onClick={onClickDelete}>
+          <FontAwesomeIcon icon={faDeleteLeft} />
+        </button>
       </div>
     </>
   );
