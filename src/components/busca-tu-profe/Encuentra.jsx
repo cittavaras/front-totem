@@ -102,7 +102,6 @@ export const Encuentra = () => {
                 readOnly
                 onChange={onChangeProfe}
                 value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'}
-
               />
             </form>
             {
@@ -115,7 +114,6 @@ export const Encuentra = () => {
                       nameDocente={profe}
                       activeKeyboard={activeKeyboard}
                       submit={handleSubmitName}
-
                     />
                   }
 
@@ -133,7 +131,6 @@ export const Encuentra = () => {
                 onChange={onChangeRut}
                 value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
                 maxLength={9}
-
               />
             </form>
             {
@@ -147,7 +144,6 @@ export const Encuentra = () => {
                       rutAlumnos={rutAlumnos}
                       activeNumpad={activeNumpad}
                       submit={handleSubmitRut}
-
                     />
                   }
 

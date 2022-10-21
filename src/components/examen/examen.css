@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-.b{
+
+.b {
     position: absolute;
     top: 200px;
     left: 450px;
@@ -11,25 +12,40 @@
     left: 450px;
 }
 
-.ac{
+.ac {
     position: absolute;
     top: 500px;
     left: 450px;
     font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 44px;
-        text-align: center;
-        color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
 
 }
-.nom{
+
+.nom {
     color: #FFB71B;
-        font-family: 'Inter', sans-serif;
-        font-size: 38px;
-        text-align: center;
-        position: fixed;
-        top: 350px;
-    
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    position: fixed;
+    top: 350px;
+
+}
+
+.inputRutExamen {
+    position: absolute;
+    width: 772px;
+    height: 104px;
+    left: 154px;
+    top: 700px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 28px;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 22px;
 }
