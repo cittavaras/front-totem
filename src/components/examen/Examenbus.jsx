@@ -10,9 +10,9 @@ import { useEffect } from 'react';
 
 export const Examenbus = () => {
 
-    const { rutExamen, setRutExamen } = useOpciones();
-   
+    const { rutExamen, setRutExamen, tituloAlumno } = useOpciones();
 
+    
     const nav = useNavigate();
     const handleClick = (e) => {
         setRutExamen(e)
@@ -31,7 +31,7 @@ export const Examenbus = () => {
         <Cont >
             <div className='container'>
                 <img />
-                <h1>nombre del alumno</h1>
+                <h1>{`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}`}</h1>
                 <ol className='d-flex flex-column justify-content-center'>
                     <h3>Selecciona el exámen que necesites encontrar:</h3>
                     {rutExamen.length > 0 ?
