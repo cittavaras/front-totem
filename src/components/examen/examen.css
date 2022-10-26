@@ -47,5 +47,32 @@
 h1,h3{
     text-align: center;
 }
-
-
+.lista-profe {
+    position: fixed;
+    top: 630px;
+    height: 24%;
+    padding-top: 4rem;
+    overflow-y: scroll; 
+}
+.titulo-docente-tarjeta {
+    box-sizing: border-box;
+    width: 772px;
+    height: 85px;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 22px 22px 22px 22px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.lista-contenedor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    position: relative;
+    top: -160px;
+}

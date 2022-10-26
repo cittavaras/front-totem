@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 export const Examenbus = () => {
 
-    const { rutExamen, setRutExamen } = useOpciones();
+    const { rutExamen, setRutExamen, tituloAlumno} = useOpciones();
    
 
     const nav = useNavigate();
@@ -20,7 +20,7 @@ export const Examenbus = () => {
     }
     useEffect(() => {
         console.log('carga de examenes')
-
+        console.log(tituloAlumno)
         return () => {
             setRutExamen([''])
         }
@@ -31,14 +31,16 @@ export const Examenbus = () => {
         <Cont >
             <div className='container'>
                 <img />
-                <h1>nombre del alumno</h1>
-                <ol className='d-flex flex-column justify-content-center'>
-                    <h3>Selecciona el exámen que necesites encontrar:</h3>
+                <h1>{`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}`}</h1>
+                <h3>Selecciona el exámen que necesites encontrar:</h3>
+                   
+                <ol className="lista-profe">
+               
                     {rutExamen.length > 0 ?
                         rutExamen.map((rutExamen, index) => (
                             <div key={index + 1} onClick={(e) => handleClick({ ...rutExamen }, e)}>
                                 <TarjetaExamen {...rutExamen} />
-
+                                
                             </div>
                         )) : (<p>NO TIENES EXAMENES</p>)
                     }
