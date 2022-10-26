@@ -16,7 +16,6 @@ export const ResultadoRut = () => {
     }
     useEffect(() => {
         console.log('carga de profe')
-
         return () => {
             setProfe([''])
         }

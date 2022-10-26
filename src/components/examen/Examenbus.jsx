@@ -10,9 +10,9 @@ import { useEffect } from 'react';
 
 export const Examenbus = () => {
 
-    const { rutExamen, setRutExamen, tituloAlumno} = useOpciones();
-   
+    const { rutExamen, setRutExamen, tituloAlumno } = useOpciones();
 
+    
     const nav = useNavigate();
     const handleClick = (e) => {
         setRutExamen(e)
@@ -32,10 +32,8 @@ export const Examenbus = () => {
             <div className='container'>
                 <img />
                 <h1>{`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}`}</h1>
-                <h3>Selecciona el exámen que necesites encontrar:</h3>
-                   
-                <ol className="lista-profe">
-               
+                <ol className='d-flex flex-column justify-content-center'>
+                    <h3>Selecciona el exámen que necesites encontrar:</h3>
                     {rutExamen.length > 0 ?
                         rutExamen.map((rutExamen, index) => (
                             <div key={index + 1} onClick={(e) => handleClick({ ...rutExamen }, e)}>
