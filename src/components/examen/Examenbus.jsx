@@ -46,7 +46,7 @@ export const Examenbus = () => {
                         rutExamen.map((rutExamen, index) => (
                             <div key={index + 1} onClick={(e) => handleClick({ ...rutExamen }, e)}>
                                 <TarjetaExamen {...rutExamen} />
-
+                                
                             </div>
                         )) : (<p>NO TIENES EXAMENES</p>)
                     }
