@@ -5,22 +5,32 @@ import { useNavigate } from 'react-router-dom';
 import { TarjetaExamen } from './TarjetaExamen';
 import useOpciones from '../../hooks/useOpciones';
 import { useEffect } from 'react';
+import { getAlumno } from '../../helpers/getRut';
+import { useState } from 'react';
 
 
 
 export const Examenbus = () => {
 
-    const { rutExamen, setRutExamen, tituloAlumno } = useOpciones();
+    const { rutExamen, setRutExamen, rutAlumnos } = useOpciones();
 
-    
+    const [title, setTitle] = useState({ Nombre_alumno: '', Apellido_Paterno: '', Apellido_Materno: '' })
     const nav = useNavigate();
+
     const handleClick = (e) => {
         setRutExamen(e)
         nav('buscaexamen')
     }
     useEffect(() => {
+        getAlumno(rutAlumnos).then((respAlumno) => {
+            setTitle({
+                Nombre_Alumno: respAlumno.Nombre_Alumno,
+                Apellido_Paterno_Alumno: respAlumno.Apellido_Paterno_Alumno,
+                Apellido_Materno_Alumno: respAlumno.Apellido_Materno_Alumno
+            })
+        })
         console.log('carga de examenes')
-     
+        console.log(rutExamen,title, rutAlumnos)
         return () => {
             setRutExamen([''])
         }
@@ -31,7 +41,7 @@ export const Examenbus = () => {
         <Cont >
             <div className='container'>
                 <img />
-                <h1>{`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}`}</h1>
+                <h1>{`${title.Nombre_Alumno} ${title.Apellido_Paterno_Alumno} ${title.Apellido_Materno_Alumno}`}</h1>
                 <ol className='d-flex flex-column justify-content-center'>
                     <h3 className='seleexamen'>Selecciona el exámen que necesites encontrar:</h3>
                     {rutExamen.length > 0 ?

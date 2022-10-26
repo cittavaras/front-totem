@@ -6,18 +6,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDeleteLeft, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 
-export const NumericPadEx = ({ setRutExamen, rutExamen, activeNumpad, submit }) => {
+export const NumericPadEx = ({ setRutAlumnos, rutAlumnos, activeNumpad, submit }) => {
 
-  const onClickRutExamen = (e) => {
+  const onClickRutAlumnos = (e) => {
     const value = e.currentTarget.value
-    setRutExamen(rutExamen + `${value}`);
+    setRutAlumnos(rutAlumnos + `${value}`);
   }
   const onClickDelete = () => {
-    setRutExamen(rutExamen.slice(0, -1));
+    setRutAlumnos(rutAlumnos.slice(0, -1));
 
   }
 
-  const onCleanRutExamen = () => { setRutExamen('') }
+  const onCleanRutAlumnos = () => { setRutAlumnos('') }
 
 
   return (
@@ -27,7 +27,7 @@ export const NumericPadEx = ({ setRutExamen, rutExamen, activeNumpad, submit }) 
           {/* Volver */}
           <img src={volver} alt="" />
         </Volver>
-        <button onClick={onCleanRutExamen} className="limpiar-pad">
+        <button onClick={onCleanRutAlumnos} className="limpiar-pad">
           <FontAwesomeIcon icon={faTrash} />
           Limpiar
         </button>
@@ -43,18 +43,18 @@ export const NumericPadEx = ({ setRutExamen, rutExamen, activeNumpad, submit }) 
       <div className="numeric-pad">
 
 
-        <button value="1" onClick={onClickRutExamen} className="numeric-pad-button">1</button>
-        <button value="2" onClick={onClickRutExamen} className="numeric-pad-button">2</button>
+        <button value="1" onClick={onClickRutAlumnos} className="numeric-pad-button">1</button>
+        <button value="2" onClick={onClickRutAlumnos} className="numeric-pad-button">2</button>
 
-        <button value="3" onClick={onClickRutExamen} className="numeric-pad-button">3</button>
-        <button value="4" onClick={onClickRutExamen} className="numeric-pad-button">4</button>
-        <button value="5" onClick={onClickRutExamen} className="numeric-pad-button">5</button>
-        <button value="6" onClick={onClickRutExamen} className="numeric-pad-button">6</button>
-        <button value="7" onClick={onClickRutExamen} className="numeric-pad-button">7</button>
-        <button value="8" onClick={onClickRutExamen} className="numeric-pad-button">8</button>
-        <button value="9" onClick={onClickRutExamen} className="numeric-pad-button">9</button>
-        <button value="0" onClick={onClickRutExamen} className="numeric-pad-button">0</button>
-        <button value="K" onClick={onClickRutExamen} className="numeric-pad-button">K</button>
+        <button value="3" onClick={onClickRutAlumnos} className="numeric-pad-button">3</button>
+        <button value="4" onClick={onClickRutAlumnos} className="numeric-pad-button">4</button>
+        <button value="5" onClick={onClickRutAlumnos} className="numeric-pad-button">5</button>
+        <button value="6" onClick={onClickRutAlumnos} className="numeric-pad-button">6</button>
+        <button value="7" onClick={onClickRutAlumnos} className="numeric-pad-button">7</button>
+        <button value="8" onClick={onClickRutAlumnos} className="numeric-pad-button">8</button>
+        <button value="9" onClick={onClickRutAlumnos} className="numeric-pad-button">9</button>
+        <button value="0" onClick={onClickRutAlumnos} className="numeric-pad-button">0</button>
+        <button value="K" onClick={onClickRutAlumnos} className="numeric-pad-button">K</button>
         <button
           className="tecla delete"
           onClick={onClickDelete}>
