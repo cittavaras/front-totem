@@ -20,20 +20,20 @@ export const Examenbus = () => {
     }
     useEffect(() => {
         console.log('carga de examenes')
-        console.log(tituloAlumno)
+     
         return () => {
             setRutExamen([''])
         }
     }, [rutExamen])
 
-    console.log(rutExamen)
+   
     return (
         <Cont >
             <div className='container'>
                 <img />
                 <h1>{`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}`}</h1>
                 <ol className='d-flex flex-column justify-content-center'>
-                    <h3>Selecciona el exámen que necesites encontrar:</h3>
+                    <h3 className='seleexamen'>Selecciona el exámen que necesites encontrar:</h3>
                     {rutExamen.length > 0 ?
                         rutExamen.map((rutExamen, index) => (
                             <div key={index + 1} onClick={(e) => handleClick({ ...rutExamen }, e)}>

@@ -9,11 +9,20 @@
     left: 450px;
 }
 
-/* .c {
+.seleexamen{
+
     position: absolute;
-    top: 350px;
-    left: 450px;
-} */
+    top: 400px;
+    left: 140px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 
 .ac {
     position: absolute;
@@ -49,19 +58,19 @@ h1,h3{
 }
 .lista-profe {
     position: fixed;
-    top: 630px;
-    height: 24%;
-    padding-top: 4rem;
+    top: 50px;
+    height: 15%;
+    padding-top: 2rem;
     overflow-y: scroll; 
 }
-.titulo-docente-tarjeta {
+.contenedor .lista-contenedor .titulo-docente-tarjeta {
     box-sizing: border-box;
     width: 772px;
     height: 85px;
     background: rgba(255, 255, 255, 0.59);
-    border-radius: 22px 22px 22px 22px;
+    border-radius: 22px;
     position: relative;
-    top: 40px;
+    top: 110px;
     left: 50px;
 }
 .lista-contenedor {
@@ -72,7 +81,8 @@ h1,h3{
 .contenedor {
     display: flex;
     flex-direction: column;
-    height: 180px;
+    height: 110px;
     position: relative;
-    top: -160px;
+    top: 10px;
+    left: 60px;
 }

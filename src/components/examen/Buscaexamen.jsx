@@ -3,20 +3,32 @@ import './examen.css';
 import human from './img/human.png';
 import styled from 'styled-components';
 import useOpciones from '../../hooks/useOpciones';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const Buscaexamen = () => {
-
+    const [imagen, setImagen] = useState(false)
     const { rutExamen, setRutExamen } = useOpciones();
-    // const { } = rutExamen;
+    const { asignatura, setCategoriaEvaluacion } = useOpciones();
+    const { Aula, Nom_Asignatura, Final, HorInic } = asignatura;
     console.log(rutExamen);
-
+    const handleEnter = () => {
+      setImagen(true)
+      console.log('1')
+    }
+  
+    const handleLeave = () => {
+      setImagen(false)
+      console.log('2')
+    }
+    
     return (
         <Fondo>
-            <Div onTouchEnd={'handleLeave'}>
-                <Asigantura>
-                    <p>{'Nom_Asignatura'}</p>
-                    <p>Se realiza en:</p>
-                </Asigantura>
+            <Div onTouchEnd={handleLeave}>
+        <Asigantura>
+          <p>{Nom_Asignatura}</p>
+          <p>Se realiza en:</p>
+        </Asigantura>
 
                 <ContenedorHorario>
                     <Horario className='btn-font'>{'HorInic'} - {'Final'}</Horario>
