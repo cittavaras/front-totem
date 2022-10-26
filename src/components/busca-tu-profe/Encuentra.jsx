@@ -28,11 +28,11 @@ const Container = styled.div`
 
 export const Encuentra = () => {
 
-  const [rutAlumnos, setRutAlumnos] = useState('');
+  
   const [active, setActive] = useState(false);
   const [numpad, SetNumpad] = useState(false);
   const [keyboard, setKeyboard] = useState(false);
-  const { setTituloAlumno, tituloAlumno, setProfe, profe } = useOpciones();
+  const { setTituloAlumno, tituloAlumno, setProfe, profe ,rutAlumnos, setRutAlumnos} = useOpciones();
   const navigate = useNavigate();
 
   const onChangeProfe = (e) => {

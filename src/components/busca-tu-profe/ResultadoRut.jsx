@@ -30,7 +30,7 @@ export const ResultadoRut = () => {
                     className='titulo-alumno'>
                     {profe.length > 0 ?
                         `${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} 
-                         ${tituloAlumno.Apellido_Paterno_Alumno}`
+                         ${tituloAlumno.Apellido_Materno_Alumno}`
                         : ''}
                 </h3>
 

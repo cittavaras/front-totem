@@ -12,24 +12,24 @@ export const Examen = () => {
 
     const [numpad, SetNumpad] = useState(false);
     const [active, setActive] = useState(false);
-    const { rutExamen, setRutExamen } = useOpciones();
+    const { rutAlumnos, setRutAlumnos, setRutExamen } = useOpciones();
     const nav = useNavigate();
 
     const activeNumpad = () => {
         SetNumpad(!numpad);
         console.log(numpad)
     }
-    const onChangeRutExamen = (e) => {
+    const onChangeRutAlumnos = (e) => {
         const value = e.target.value;
-        setRutExamen(value);
+        setRutAlumnos(value);
         if (e.target.value === '') {
             setActive(false)
-            setRutExamen({})
+            setRutAlumnos({})
         }
     }
-    const handleSubmitRutExamen = async (e) => {
+    const handleSubmitRutAlumnos = async (e) => {
         e.preventDefault();
-        const { result } = await getExamen(rutExamen);
+        const { result } = await getExamen(rutAlumnos);
         setRutExamen(result);
         nav('resultado');
     }
@@ -46,15 +46,15 @@ export const Examen = () => {
             <div className='Aaa'>
                 <img className='b' src={exam} />
 
-                <form onSubmit={handleSubmitRutExamen}>
+                <form onSubmit={handleSubmitRutAlumnos}>
                     <h1 className='ac'>INGRESA TU RUT</h1>
                     <Input
                         negro={numpad}
                         onClick={activeNumpad}
                         type='text'
                         readOnly
-                        onChange={onChangeRutExamen}
-                        value={numpad ? rutExamen : 'INGRESA TU RUT'}
+                        onChange={onChangeRutAlumnos}
+                        value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
                         maxLength={9}
                     />
                 </form>
@@ -64,10 +64,10 @@ export const Examen = () => {
                     >
                         {
                             <NumericPadEx
-                                setRutExamen={setRutExamen}
-                                rutExamen={rutExamen}
+                                setRutAlumnos={setRutAlumnos}
+                                rutAlumnos={rutAlumnos}
                                 activeNumpad={activeNumpad}
-                                submit={handleSubmitRutExamen}
+                                submit={handleSubmitRutAlumnos}
                             />
                         }
                     </div>) : ''
