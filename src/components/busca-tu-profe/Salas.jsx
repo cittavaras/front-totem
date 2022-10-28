@@ -111,7 +111,6 @@ const Div = styled.div`
   display: flex  ;
   background-color:rgba(0, 0, 0, 0.28);
   height: 100vh;
-
   flex-direction: column;
   align-items: center;
   gap: 1rem;

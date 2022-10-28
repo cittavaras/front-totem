@@ -43,7 +43,7 @@ export const Agendafinal = () => {
 
   return (
     <>
-      <img className='a' src={fondo} />
+      <img className='fondosA' src={fondo} />
       <div>
         <img className='circulo' src={circulo} />
         <img className='qr' src={qr} />

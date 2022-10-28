@@ -1,6 +1,5 @@
 import fondo from './img/frentesedeblur.png';
 import './examen.css';
-import human from './img/human.png';
 import styled from 'styled-components';
 import useOpciones from '../../hooks/useOpciones';
 import { useState } from 'react';
@@ -11,7 +10,7 @@ export const Buscaexamen = () => {
     const { rutExamen, setRutExamen } = useOpciones();
     const { asignatura, setCategoriaEvaluacion } = useOpciones();
     const { Aula, Nom_Asignatura, Final, HorInic } = asignatura;
-    console.log(rutExamen);
+  
     const handleEnter = () => {
       setImagen(true)
       console.log('1')
@@ -21,7 +20,7 @@ export const Buscaexamen = () => {
       setImagen(false)
       console.log('2')
     }
-    
+    console.log(asignatura);
     return (
         <Fondo>
             <Div onTouchEnd={handleLeave}>

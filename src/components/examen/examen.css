@@ -45,44 +45,31 @@
     text-align: center;
     position: fixed;
     top: 350px;
+}
 
-}
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 35%;
-}
 h1,h3{
     text-align: center;
 }
-.lista-profe {
-    position: fixed;
-    top: 50px;
-    height: 15%;
-    padding-top: 2rem;
-    overflow-y: scroll; 
+
+.ContainerExamen {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    position: relative;
+    top: 100px;
+    left: 100px;
 }
-.contenedor .lista-contenedor .titulo-docente-tarjeta {
+.ContainerExamen .Container-Examen {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.ContainerExamen .Container-Examen .titulo-Examen {
     box-sizing: border-box;
     width: 772px;
     height: 85px;
     background: rgba(255, 255, 255, 0.59);
-    border-radius: 22px;
+    border-radius: 22px ;
     position: relative;
-    top: 110px;
-    left: 50px;
-}
-.lista-contenedor {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    height: 110px;
-    position: relative;
-    top: 10px;
-    left: 60px;
+    top: 400px;
 }

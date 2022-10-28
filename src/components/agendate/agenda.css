@@ -9,8 +9,13 @@
     justify-content: center;
 }
 
-.a {
-    position: relative;
+.fondosA {
+    position: absolute;
+    top: -100px;
+}
+.fondosB{
+   
+    top: -100px;
 }
 
 .title-agenda {
