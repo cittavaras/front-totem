@@ -60,7 +60,7 @@ const AppRouter = () => {
           <Route path='examen' element={<Examen/>} />
           <Route path='examen/:examenbus' element={<Examenbus/>} />
           <Route path='examen/:examenbus/buscaexamen' element={<Buscaexamen />} /> 
-          // dakjlal
+          
 
         </Route>
       </Routes>
